@@ -11,11 +11,12 @@ jobs:
       - run: |
           set +e
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          for u in "/index.php?dispatch=products.search&q=pokemon+30&search_performed=Y&items_per_page=96&sort_by=timestamp&sort_order=desc" "/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc" "/" ; do
-            curl -s -o body.html -D h.txt -m 40 -A "$UA" -H 'Accept: text/html' -H 'Accept-Language: fr-CH,fr;q=0.9' -w "%{http_code} %{time_total}s %{size_download}B $u\n" "https://www.400coups.ch$u" >> out.txt || echo "curl err $? $u" >> out.txt
-            head -20 h.txt >> out.txt; head -c 400 body.html >> out.txt; echo; echo ---- >> out.txt
-            sleep 3
+          U="https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc"
+          for gap in 5 5 5 8 8 8 12 12 12 20 20; do
+            sleep $gap
+            curl -s -o /dev/null -m 40 -A "$UA" -H 'Accept: text/html' -w "gap ${gap}s -> %{http_code} %{time_total}s\n" "$U" >> out.txt
           done
+          curl -s -o /dev/null -D - -m 40 -A "$UA" "https://www.400coups.ch/index.php?dispatch=products.view&product_id=45246" | grep -iE "^HTTP|retry|location" >> out.txt
           curl -s -m 10 https://ipinfo.io/json >> out.txt || true
           git config user.name diag; git config user.email diag@users.noreply.github.com
           git checkout --orphan diag-out; git rm -rfq . ; git add out.txt; git commit -qm diag; git push -f origin diag-out; exit 0
