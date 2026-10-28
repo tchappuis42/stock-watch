@@ -11,26 +11,39 @@
 //               "shop": "prestashop" (red-line.shop), "woocommerce" (mix-image.ch), "shopify" (poke-swiss.ch)
 //               "shopware" (amazingtoys.ch: one product per page, language = variant), "wix" (arcbleu.shop)
 //               "cscart" (400coups.ch: search / category pages), "playin" (play-in.com: product pages,
-//               online + one store's stock) or "prestashopHtml" (ludocortex.fr: plain category / search pages)
+//               online + one store's stock) or "prestashopHtml" (plain category / search pages, when the
+//               shop refuses the JSON listing)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36';
 const STATE_FILE = 'state.json';
+// One slow shop must not eat the whole pass: the job is killed after 5 min (watch.yml).
+const TIMEOUT = 15_000; // per request
+const DEADLINE = Date.now() + 3.5 * 60_000; // no new watch is started after this
 const topic = process.env.NTFY_TOPIC;
 const report = process.env.REPORT === '1' || process.env.REPORT === 'true';
 const config = JSON.parse(readFileSync('watch.json', 'utf8'));
 const state = existsSync(STATE_FILE) ? JSON.parse(readFileSync(STATE_FILE, 'utf8')) : {};
 const log = (...a) => console.log(new Date().toISOString(), ...a);
 
-async function push(title, message, url) {
+// `orderable`: the push is about one product that can be ordered → tag "orderable", which the PC viewer
+// (viewer/ntfy_viewer.pyw) reads instead of guessing from each shop's wording.
+// Returns false when the push did not go out, so the caller keeps the old state and alerts again next pass.
+async function push(title, message, url, orderable = false) {
   log(`🔔 ${title} — ${message}`);
-  if (!topic) return log('⚠ NTFY_TOPIC not set — no push');
+  if (!topic) {
+    log('⚠ NTFY_TOPIC not set — no push');
+    return true;
+  }
+  const tags = orderable ? ['rotating_light', 'orderable'] : ['rotating_light'];
   const res = await fetch('https://ntfy.sh/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ topic, title, message, priority: 5, ...(url && { click: url }), tags: ['rotating_light'] }),
+    body: JSON.stringify({ topic, title, message, priority: 5, ...(url && { click: url }), tags }),
+    signal: AbortSignal.timeout(15_000),
   }).catch((e) => ({ ok: false, status: e.message }));
   if (!res.ok) log(`⚠ ntfy push failed: ${res.status}`);
+  return res.ok;
 }
 
 class Skip extends Error {} // page not readable this time (429, 5xx, timeout): try again next pass, no alert
@@ -39,7 +52,7 @@ async function get(url, accept) {
   const res = await fetch(url, {
     // X-Requested-With only for JSON: PrestaShop needs it to answer in JSON, Shopware refuses it on HTML pages (403).
     headers: { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'fr-CH,fr;q=0.9', ...(accept.includes('json') && { 'X-Requested-With': 'XMLHttpRequest' }) },
-    signal: AbortSignal.timeout(30_000),
+    signal: AbortSignal.timeout(TIMEOUT),
   }).catch((e) => {
     throw new Skip(e.message);
   });
@@ -60,9 +73,17 @@ const norm = (s) => s.normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLowerCa
 // Language from a name or a "Langue" attribute. French wins when several are listed ("FR/EN"), since a
 // bilingual product is fine for a French buyer. null = no language marker at all.
 function nameLanguage(text) {
-  const has = (codes, words) => new RegExp(`(^|[^A-Za-z])(${codes})([^A-Za-z]|$)`).test(text) || new RegExp(words).test(norm(text));
   // Codes only count in capitals ("FR", "JP"): lowercase "de", "en"… are ordinary French words.
-  if (has('FR|VF', 'francais|french')) return 'FR';
+  // In an all-caps name ("COFFRET DE COLLECTION", "… (EN STOCK)") "DE", "EN"… are words too, so there the
+  // other codes only count at the end or next to a separator ("… - EN", "(JP)", "EN/DE", "EN, DE").
+  // "FR" / "VF" are never words: they count anywhere.
+  const caps = text === text.toUpperCase();
+  const code = (codes, strict) =>
+    strict
+      ? new RegExp(`[-(\\[/,|]\\s*(${codes})([^A-Za-z]|$)|(^|[^A-Za-z])(${codes})\\s*([-)\\]/,|]|$)`)
+      : new RegExp(`(^|[^A-Za-z])(${codes})([^A-Za-z]|$)`);
+  const has = (codes, words, strict = caps) => code(codes, strict).test(text) || new RegExp(words).test(norm(text));
+  if (has('FR|VF', 'francais|french', false)) return 'FR';
   if (has('JP|JPN|JAP', 'japonais|japanese')) return 'JPN';
   if (has('EN|ENG|US|UK', 'anglais|english')) return 'ENG';
   if (has('DE|GER', 'allemand|deutsch')) return 'DE';
@@ -100,11 +121,12 @@ async function watchProduct(item) {
   log(`${r.orderable ? '✅' : '⏳'} ${item.name}: ${r.label}`);
 
   const prev = state[item.url];
+  let sent = true;
   if (!prev) await push('Surveillance démarrée', `${item.name} — ${r.orderable ? 'COMMANDABLE !' : r.label}`, item.url);
-  else if (r.orderable && !prev.orderable) await push(`🚨 COMMANDABLE — ${item.name}`, `${r.label} — fonce !`, item.url);
-  else if (r.label !== prev.label) await push(`Changement — ${item.name}`, `${prev.label} → ${r.label}`, item.url);
+  else if (r.orderable && !prev.orderable) sent = await push(`🚨 COMMANDABLE — ${item.name}`, `${item.name} — ${r.label}`, item.url, true);
+  else if (r.label !== prev.label) sent = await push(`Changement — ${item.name}`, `${prev.label} → ${r.label}`, item.url);
   else if (report) await push(`Test OK — ${item.name}`, `${r.orderable ? 'COMMANDABLE !' : r.label} (rien n'a changé)`, item.url);
-  state[item.url] = { orderable: r.orderable, label: r.label, at: new Date().toISOString() };
+  if (sent) state[item.url] = { orderable: r.orderable, label: r.label, at: new Date().toISOString() };
 }
 
 // ---------- searches: PrestaShop product lists (red-line.shop) + keyword filter ----------
@@ -214,7 +236,9 @@ async function shopwareVariantUrl(base, productUrl, option) {
   return j.url;
 }
 
-async function listShopware(base, path, s) {
+// `ctx.unread` collects the products whose own page failed: their last known state is kept, so a failed
+// page does not look like a sell-out (and the next successful read like a restock).
+async function listShopware(base, path, s, ctx) {
   const h = await getHtml(new URL(path, base));
   const boxes = [...h.matchAll(/data-product-information="([^"]+)"([\s\S]*?)(?=data-product-information=|<\/main>|$)/g)].map(([, info, rest]) => {
     const p = JSON.parse(decode(info));
@@ -222,6 +246,7 @@ async function listShopware(base, path, s) {
     const tag = [...rest.matchAll(/<a\s[^>]*>/g)].map((m) => m[0]).find((a) => /class="[^"]*(product-name|btn-detail)/.test(a));
     return { id: p.id, name: decode(p.name), link: tag && decode(between(tag, /href="(https?:[^"]+)"/) ?? '') };
   });
+  ctx.boxes += boxes.length;
   const cache = (state[`variants:${s.name}`] ??= {});
   const products = [];
   for (const b of boxes) {
@@ -238,6 +263,7 @@ async function listShopware(base, path, s) {
     } catch (e) {
       if (!(e instanceof Skip)) throw e;
       log(`⏭ ${b.name}: ${e.message}`);
+      ctx.unread.add(b.id);
       if (e.message.includes('429')) throw e; // the shop asks us to slow down: stop this shop for this pass
     }
   }
@@ -319,7 +345,7 @@ const listCsCart = async (base, path) => listCsCartHtml(await getHtml(new URL(pa
 async function csCartById(base, id) {
   const res = await fetch(new URL(`/index.php?dispatch=products.view&product_id=${id}`, base), {
     headers: { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'fr-CH,fr;q=0.9' },
-    signal: AbortSignal.timeout(30_000),
+    signal: AbortSignal.timeout(TIMEOUT),
   }).catch((e) => {
     throw new Skip(e.message);
   });
@@ -395,10 +421,13 @@ async function listPlayin(base, id, s) {
   const storeOk = /STOCK_IN_STORE|IN_STOCK/.test(inStore);
   const onlineOk = !/OUT_OF_STOCK/.test(online) && online !== '?';
   const words = { STOCK_IN_STORE: 'en stock', OUT_OF_STOCK: 'rupture', STOCK_IN_WAREHOUSE: 'en stock' };
+  // Price: "sellPrice" of the product object that holds "productStores" (0 until the shop sets it). The page
+  // also embeds other products (menus, suggestions) with their own prices.
+  const price = Number(between(h.slice(h.lastIndexOf('"product":{', at), at), /"sellPrice":([\d.]+)/));
   return [{
     id: String(id),
     name,
-    price: Number(between(raw, /"price":\s*([\d.]+)/)) ? `${Number(between(raw, /"price":\s*([\d.]+)/)).toFixed(2)} €` : '?',
+    price: price ? `${price.toFixed(2)} €` : '?',
     url: new URL(`/fr/produit/${id}/x`, base).href,
     orderable: storeOk || onlineOk,
     status: `magasin ${store} : ${words[inStore] ?? inStore} — en ligne : ${words[online] ?? online}${release ? ` — sortie ${release.split('-').reverse().join('/')}` : ''}`,
@@ -407,7 +436,7 @@ async function listPlayin(base, id, s) {
   }];
 }
 
-// PrestaShop pages read as plain HTML, for shops whose firewall refuses the JSON (XHR) listing (ludocortex.fr).
+// PrestaShop pages read as plain HTML, for shops whose firewall refuses the JSON (XHR) listing.
 // Each <article class="product-miniature" data-id-product="…">: link, title, price, "badge out-of-stock",
 // and an add-to-cart button that is `disabled` when it cannot be ordered.
 async function listPrestaShopHtml(base, path) {
@@ -458,11 +487,14 @@ const summary = (lines, max = 8) => lines.slice(0, max).join('\n') + (lines.leng
 
 async function watchSearch(s) {
   const seen = new Map();
+  // unread: products whose own page failed this pass (Shopware), left as they were.
+  // boxes: products listed before Shopware's own filtering (its `seen` only holds the matching ones).
+  const ctx = { unread: new Set(), boxes: 0 };
   let read = 0;
   for (const [i, path] of s.pages.entries()) {
-    if (i && s.pauseMs) await new Promise((r) => setTimeout(r, s.pauseMs)); // gentle with touchy shops (400 Coups)
+    if (i && s.pauseMs) await pause(s.pauseMs); // gentle with touchy shops (400 Coups)
     try {
-      for (const p of await LISTERS[s.shop ?? 'prestashop'](s.base, path, s)) seen.set(p.id, p);
+      for (const p of await LISTERS[s.shop ?? 'prestashop'](s.base, path, s, ctx)) seen.set(p.id, p);
       read++;
     } catch (e) {
       if (!(e instanceof Skip)) throw e;
@@ -471,13 +503,14 @@ async function watchSearch(s) {
     }
   }
   if (!read) throw new Skip('aucune page lue');
-  const complete = read === s.pages.length; // every list read: a product missing from them is really gone
+  let complete = read === s.pages.length; // every list read: a product missing from them is really gone
   if (s.shop === 'cscart' && (s.hidden?.length || s.probe)) {
     try {
       for (const p of await hiddenCsCart(s, seen)) seen.set(p.id, p);
     } catch (e) {
       if (!(e instanceof Skip)) throw e;
       log(`⏭ ${s.name} fiches cachées: ${e.message}`);
+      complete = false; // the hidden pages not read this time must not look sold out
     }
   }
 
@@ -489,6 +522,9 @@ async function watchSearch(s) {
   const key = `search:${s.name}`;
   const first = !state[key];
   const known = state[key]?.products ?? {};
+  // A page whose layout changed is read as an empty list, not as an error: say it once, after a few passes.
+  let empty = seen.size || ctx.boxes ? 0 : (state[key]?.empty ?? 0) + 1;
+  if (empty === 3 && !(await push(`⚠ ${s.name}`, `Aucun produit lu depuis ${empty} passages : le site a peut-être changé.`, s.link))) empty = 2;
   const line = (p) => `${p.orderable ? '✅' : '⏳'} ${describe(p, s.match.language)}`;
   const fresh = first ? [] : hits.filter((p) => !known[p.id]);
   // Back in stock / now orderable. Single cards ("singles": "once") are only announced when they first appear.
@@ -498,23 +534,30 @@ async function watchSearch(s) {
 
   // New products: sealed ones always get their own push; single cards are grouped when a batch arrives
   // (e.g. 15 cards added at once), so a coffret is never buried in a list of singles.
+  // An alert that did not go out leaves its product as it was, so the next pass sends it again.
+  // 🚨 / 👀: the shop on the first line, then the usual "name — price — status" line (read by the viewer).
+  const failed = new Set();
   const freshSingles = fresh.filter((p) => p.single);
   const alone = freshSingles.length > 3 ? fresh.filter((p) => !p.single) : fresh;
-  for (const p of alone) await push(`🆕 ${s.name}${p.orderable ? ' — COMMANDABLE' : ''}`, describe(p, s.match.language), p.url);
-  if (freshSingles.length > 3) await push(`🆕 ${s.name} — ${freshSingles.length} nouvelles cartes à l’unité`, summary(freshSingles.map(line)), s.link);
-  for (const p of nowOrderable) await push(`🚨 COMMANDABLE — ${p.name}`, `${p.price} — ${p.status} — fonce !`, p.url);
-  for (const p of nowVisible) await push(`👀 En ligne — ${p.name}`, `La fiche est visible : ${p.price} — ${p.status}`, p.url);
+  for (const p of alone) if (!(await push(`🆕 ${s.name}${p.orderable ? ' — COMMANDABLE' : ''}`, describe(p, s.match.language), p.url, p.orderable))) failed.add(p.id);
+  if (freshSingles.length > 3 && !(await push(`🆕 ${s.name} — ${freshSingles.length} nouvelles cartes à l’unité`, summary(freshSingles.map(line)), s.link))) for (const p of freshSingles) failed.add(p.id);
+  for (const p of nowOrderable) if (!(await push(`🚨 COMMANDABLE — ${p.name}`, `${s.name}\n${describe(p, s.match.language)}`, p.url, true))) failed.add(p.id);
+  for (const p of nowVisible) if (!(await push(`👀 En ligne — ${p.name}`, `${s.name}\n${describe(p, s.match.language)}`, p.url))) failed.add(p.id);
 
   const all = summary(hits.map(line));
-  if (first) await push('Surveillance démarrée', `${s.name}\n${hits.length ? all : 'aucun article pour l’instant'}`, s.link);
-  else if (report) await push(`Test OK — ${s.name}`, hits.length ? all : `aucun article pour l’instant (${seen.size} produits lus)`, s.link);
+  if (first) {
+    // Not sent: stay a first pass, or the products listed in it would be known without ever being announced.
+    if (!(await push('Surveillance démarrée', `${s.name}\n${hits.length ? all : 'aucun article pour l’instant'}`, s.link))) return;
+  } else if (report) await push(`Test OK — ${s.name}`, hits.length ? all : `aucun article pour l’instant (${seen.size} produits lus)`, s.link);
 
   // Products that disappeared from the lists are kept (a delisting during a drop must not re-trigger "new"),
   // but marked not orderable: many shops hide sold-out products, and the restock must alert again.
   // Only when every list was read, so a page that failed to load does not fake a sell-out.
-  const gone = complete ? Object.fromEntries(Object.entries(known).filter(([id]) => !seen.has(id)).map(([id, k]) => [id, { ...k, orderable: false }])) : {};
+  const gone = complete ? Object.fromEntries(Object.entries(known).filter(([id]) => !seen.has(id) && !ctx.unread.has(id)).map(([id, k]) => [id, { ...k, orderable: false }])) : {};
+  const updated = hits.filter((p) => !failed.has(p.id)).map((p) => [p.id, { name: p.name, orderable: p.orderable, hidden: Boolean(p.hidden) }]);
   state[key] = {
-    products: { ...known, ...gone, ...Object.fromEntries(hits.map((p) => [p.id, { name: p.name, orderable: p.orderable, hidden: Boolean(p.hidden) }])) },
+    products: { ...known, ...gone, ...Object.fromEntries(updated) },
+    empty,
     at: new Date().toISOString(),
   };
 }
@@ -524,13 +567,27 @@ const watches = [
   ...(config.products ?? []).map((w) => ({ name: w.name, link: w.url, run: () => watchProduct(w) })),
   ...(config.searches ?? []).map((w) => ({ name: w.name, link: w.link, run: () => watchSearch(w) })),
 ];
-for (const w of watches) {
+// Start from a different watch each pass (every 10 min): when a pass runs out of time, it is not always
+// the same last shops that get skipped.
+const start = Math.floor(Date.now() / 600_000) % (watches.length || 1);
+for (const w of [...watches.slice(start), ...watches.slice(0, start)]) {
+  if (Date.now() > DEADLINE) {
+    log(`⏱ plus de temps : ${w.name} et les suivantes au prochain passage`);
+    break;
+  }
   try {
     await w.run();
   } catch (e) {
-    if (!(e instanceof Skip)) throw e;
-    log(`⏭ ${w.name}: ${e.message} — on réessaie au prochain passage`);
-    if (report) await push(`Test — ${w.name}`, `Page non lue : ${e.message}`, w.link);
+    if (e instanceof Skip) {
+      log(`⏭ ${w.name}: ${e.message} — on réessaie au prochain passage`);
+      if (report) await push(`Test — ${w.name}`, `Page non lue : ${e.message}`, w.link);
+    } else {
+      // A bug or an unexpected answer (an HTML page instead of JSON…) in one shop must not stop the others.
+      log(`❌ ${w.name}:`, e);
+      process.exitCode = 1; // the run still shows as failed in Actions
+      if (report) await push(`Test — ${w.name}`, `Erreur : ${e.message}`, w.link);
+    }
   }
+  // Saved after each watch: if the pass dies later (crash, job timeout), the alerts already sent are not sent again.
+  writeFileSync(STATE_FILE, JSON.stringify(state, null, 1));
 }
-writeFileSync(STATE_FILE, JSON.stringify(state, null, 1));

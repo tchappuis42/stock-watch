@@ -7,7 +7,7 @@ Ne se connecte à aucun compte et n'achète rien.
 
 - **`products`** : une page produit précise (400coups.ch). Alerte quand le prix et le bouton « Ajouter au panier » apparaissent.
 - **`searches`** : les listes de produits d'une boutique filtrées par mots-clés. Alerte quand un nouvel article correspondant apparaît, puis quand il devient commandable.
-  - `shop` : `prestashop` (red-line.shop), `woocommerce` (mix-image.ch), `shopify` (poke-swiss.ch) `shopware` (amazingtoys.ch) ou `wix` (arcbleu.shop).
+  - `shop` : `prestashop` (red-line.shop), `woocommerce` (mix-image.ch), `shopify` (poke-swiss.ch), `shopware` (amazingtoys.ch), `wix` (arcbleu.shop), `cscart` (400coups.ch) ou `playin` (play-in.com).
   - Shopware : la recherche est filtrée sur la langue par le site lui-même (`properties=<id de Französisch>`), puis le bot ouvre la page de la variante `variant` (« Französisch ») de chaque produit. L'adresse de chaque variante est trouvée une fois puis gardée en mémoire. Commandable = disponible ou en précommande.
   - `anyOf` : plusieurs jeux de groupes ; le nom doit contenir au moins un mot de **chaque** groupe d'**un** des jeux (ou l'article est dans une des `categories`). Actuellement : « Pokémon » + 30e/30ème/30 ans/30th, **ou** « Pokémon » + UPC/Ultra-Premium + Soirée/Journée/Nuit/Noctali/Mentali (pour écarter les anciens UPC).
   - Shopify : `pages` peut aussi pointer vers `/search/suggest.json?q=…` (10 résultats par requête) quand le catalogue est surtout des cartes à l'unité (Swiss-Pokeshop).
@@ -34,8 +34,12 @@ Secret requis : `NTFY_TOPIC` (Settings → Secrets and variables → Actions).
 
 - **Surveillance démarrée** : premier passage d'une surveillance, avec l'état actuel.
 - **🆕** : nouvel article correspondant aux mots-clés.
-- **🚨 COMMANDABLE** : l'article peut être commandé.
+- **🚨 COMMANDABLE** : l'article peut être commandé. Les alertes d'un article commandable portent le tag ntfy `orderable` (lu par la fenêtre sur le PC).
+- **👀 En ligne** : une fiche cachée (400 Coups) est devenue visible.
 - **Changement** : le statut d'une page produit a changé.
+- **⚠** : aucun produit lu sur une boutique depuis 3 passages, le format du site a sans doute changé.
+
+Une notification qui n'a pas pu partir est renvoyée au passage suivant. Une boutique en erreur n'empêche plus les autres d'être vérifiées (le passage apparaît quand même en échec dans Actions).
 - **Test OK / Test — Page non lue** : uniquement sur un test manuel.
 
 ## Fenêtre sur le PC

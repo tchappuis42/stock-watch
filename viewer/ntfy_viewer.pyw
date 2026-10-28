@@ -93,7 +93,10 @@ def ecoute(q):
 
 def boutique_depuis_titre(titre):
     """'🆕 Poke Swiss — Pokémon 30 ans FR — COMMANDABLE' -> 'Poke Swiss'
-       'Test OK — Mix-Image — Pokémon 30 ans FR'        -> 'Mix-Image'"""
+       'Test OK — Mix-Image — Pokémon 30 ans FR'        -> 'Mix-Image'
+       '🚨 COMMANDABLE — <article>' / '👀 En ligne — <article>' -> '' (la boutique est sur la 1re ligne du message)"""
+    if titre.startswith(("🚨", "👀")):
+        return ""
     morceaux = [m.strip() for m in titre.split(SEP)]
     morceaux[0] = morceaux[0].replace("🆕", "").strip()
     if morceaux and morceaux[0].lower().startswith("test"):
@@ -101,9 +104,14 @@ def boutique_depuis_titre(titre):
     return morceaux[0] if len(morceaux) >= 2 else ""
 
 
-def categorie(statut):
+def categorie(statut, commandable=None):
+    """commandable : ce que le bot en dit (✅/⏳ devant la ligne, tag "orderable"), None s'il ne dit rien.
+    Le texte du statut varie trop d'une boutique à l'autre ("en stock", "Ajouter au panier dispo"…)
+    pour servir autrement que de repli."""
     s = statut.lower()
-    if "commandable" in s and "pas" not in s:
+    if commandable is None:
+        commandable = "commandable" in s and "pas" not in s
+    if commandable:
         return "dispo"
     if "bientôt" in s or "pas encore en ligne" in s:
         return "bientot"
@@ -115,10 +123,14 @@ def decouper_message(msg):
     boutique = boutique_depuis_titre(msg.get("title", ""))
     heure = datetime.fromtimestamp(msg["time"]).strftime("%d.%m %H:%M")
     lien = msg.get("click", "")
+    # alerte d'un seul article commandable (🚨, "🆕 … — COMMANDABLE") : tag "orderable", ou le titre
+    # pour les messages envoyés avant ce tag
+    alerte_commandable = "orderable" in msg.get("tags", []) or "COMMANDABLE" in msg.get("title", "")
     lignes = []
     masques = 0
 
     for brut in msg.get("message", "").splitlines():
+        marque = brut.strip()[:1]
         ligne = brut.strip().lstrip("✅⏳").strip()
         if not ligne:
             continue
@@ -136,7 +148,9 @@ def decouper_message(msg):
             statut, details = m.group(1).strip().strip("[]"), (m.group(2) or "")
             if details:
                 article = f"{article} {details}"
-            cat = categorie(statut)
+            # ✅ / ⏳ : le bot le dit pour cette ligne ; sinon le message entier est une alerte "commandable"
+            commandable = {"✅": True, "⏳": False}.get(marque, True if alerte_commandable else None)
+            cat = categorie(statut, commandable)
             if cat == "dispo":
                 statut = "COMMANDABLE"
             lignes.append({"statut": statut, "boutique": boutique, "article": article,
