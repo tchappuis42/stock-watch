@@ -8,6 +8,7 @@ jobs:
     timeout-minutes: 4
     steps:
       - run: |
+          set +e
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
           for u in "/index.php?dispatch=products.search&q=pokemon+30&search_performed=Y&items_per_page=96&sort_by=timestamp&sort_order=desc" "/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc" "/" ; do
             curl -s -o body.html -D h.txt -m 40 -A "$UA" -H 'Accept: text/html' -H 'Accept-Language: fr-CH,fr;q=0.9' -w "%{http_code} %{time_total}s %{size_download}B $u\n" "https://www.400coups.ch$u" >> out.txt || echo "curl err $? $u" >> out.txt
@@ -16,4 +17,4 @@ jobs:
           done
           curl -s -m 10 https://ipinfo.io/json >> out.txt || true
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout --orphan diag-out; git rm -rfq . ; git add out.txt; git commit -qm diag; git push -f origin diag-out
+          git checkout --orphan diag-out; git rm -rfq . ; git add out.txt; git commit -qm diag; git push -f origin diag-out; exit 0
