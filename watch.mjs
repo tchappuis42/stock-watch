@@ -19,7 +19,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const STATE_FILE = 'state.json';
 // One slow shop must not eat the whole pass: the job is killed after 5 min (watch.yml).
 const TIMEOUT = 15_000; // per request
-const DEADLINE = Date.now() + 3.5 * 60_000; // no new watch is started after this
+const DEADLINE = Date.now() + 6 * 60_000; // no new watch is started after this
 const topic = process.env.NTFY_TOPIC;
 const report = process.env.REPORT === '1' || process.env.REPORT === 'true';
 const config = JSON.parse(readFileSync('watch.json', 'utf8'));
@@ -48,15 +48,25 @@ async function push(title, message, url, orderable = false) {
 
 class Skip extends Error {} // page not readable this time (429, 5xx, timeout): try again next pass, no alert
 
+// One fetch; on 429 (too many requests) wait and try once more before giving up for this pass.
+// 400 Coups' server refuses a request that comes less than ~4 s after the previous one, and GitHub's
+// machines are shared, so another user's traffic can trigger it too.
+async function fetchPolite(url, headers) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url, { headers, signal: AbortSignal.timeout(TIMEOUT) }).catch((e) => {
+      throw new Skip(e.message);
+    });
+    if (res.status !== 429) return res;
+    if (attempt) throw new Skip('HTTP 429 (trop de requêtes)');
+    const wait = Math.min(Number(res.headers.get('retry-after')) || 15, 30);
+    log(`⏳ 429 sur ${new URL(url).host} — nouvel essai dans ${wait} s`);
+    await pause(wait * 1000);
+  }
+}
+
 async function get(url, accept) {
-  const res = await fetch(url, {
-    // X-Requested-With only for JSON: PrestaShop needs it to answer in JSON, Shopware refuses it on HTML pages (403).
-    headers: { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'fr-CH,fr;q=0.9', ...(accept.includes('json') && { 'X-Requested-With': 'XMLHttpRequest' }) },
-    signal: AbortSignal.timeout(TIMEOUT),
-  }).catch((e) => {
-    throw new Skip(e.message);
-  });
-  if (res.status === 429) throw new Skip('HTTP 429 (trop de requêtes)');
+  // X-Requested-With only for JSON: PrestaShop needs it to answer in JSON, Shopware refuses it on HTML pages (403).
+  const res = await fetchPolite(url, { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'fr-CH,fr;q=0.9', ...(accept.includes('json') && { 'X-Requested-With': 'XMLHttpRequest' }) });
   if (!res.ok) throw new Skip(`HTTP ${res.status}`);
   return res;
 }
@@ -343,13 +353,7 @@ const listCsCart = async (base, path) => listCsCartHtml(await getHtml(new URL(pa
 //  - `probe`: each pass also tries the next few ids after the highest known one, so pages created later
 //    are found too; matching ones are added to the hidden list (kept in state.json).
 async function csCartById(base, id) {
-  const res = await fetch(new URL(`/index.php?dispatch=products.view&product_id=${id}`, base), {
-    headers: { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'fr-CH,fr;q=0.9' },
-    signal: AbortSignal.timeout(TIMEOUT),
-  }).catch((e) => {
-    throw new Skip(e.message);
-  });
-  if (res.status === 429) throw new Skip('HTTP 429 (trop de requêtes)');
+  const res = await fetchPolite(new URL(`/index.php?dispatch=products.view&product_id=${id}`, base), { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'fr-CH,fr;q=0.9' });
   const url = res.url;
   const slug = decodeURIComponent(new URL(url).pathname.replace(/^\/|\.html$/g, ''));
   if (res.status === 404) return { url, slug, exists: !/^index\.php/.test(slug) && slug !== '', visible: false };
@@ -379,9 +383,13 @@ async function hiddenCsCart(s, seen) {
       language: s.defaultLanguage ?? null,
     });
   const shown = new Set([...seen.values()].map((p) => p.url));
+  // st.urls: page address of each id, so ids already shown by the listings are not opened again (fewer requests).
+  st.urls ??= {};
   for (const id of st.ids) {
+    if (shown.has(st.urls[id])) continue;
     await pause(s.pauseMs ?? 2000);
     const r = await csCartById(s.base, id);
+    if (r.exists) st.urls[id] = r.url;
     if (r.exists && !shown.has(r.url)) add(id, r);
   }
   // New pages created since last pass: try the next few ids. Deleted ids leave gaps, so every id of the

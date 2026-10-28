@@ -5,18 +5,20 @@ permissions:
 jobs:
   diag:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: state-${{ github.run_id }}
+          restore-keys: state-
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - run: |
           set +e
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          U="https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc"
-          for gap in 5 5 5 8 8 8 12 12 12 20 20; do
-            sleep $gap
-            curl -s -o /dev/null -m 40 -A "$UA" -H 'Accept: text/html' -w "gap ${gap}s -> %{http_code} %{time_total}s\n" "$U" >> out.txt
-          done
-          curl -s -o /dev/null -D - -m 40 -A "$UA" "https://www.400coups.ch/index.php?dispatch=products.view&product_id=45246" | grep -iE "^HTTP|retry|location" >> out.txt
-          curl -s -m 10 https://ipinfo.io/json >> out.txt || true
+          jq '.searches |= map(select(.shop=="cscart"))' watch.json > w.json && mv w.json watch.json
+          start=$(date +%s); node watch.mjs > out.txt 2>&1; echo "durée $(( $(date +%s)-start )) s" >> out.txt
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout --orphan diag-out; git rm -rfq . ; git add out.txt; git commit -qm diag; git push -f origin diag-out; exit 0
+          git checkout -q --orphan diag-out; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out; exit 0

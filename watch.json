@@ -32,7 +32,7 @@
         "from": 46036,
         "count": 6
       },
-      "pauseMs": 3000,
+      "pauseMs": 5000,
       "defaultLanguage": "FR",
       "match": {
         "anyOf": [
