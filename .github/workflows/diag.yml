@@ -8,14 +8,12 @@ jobs:
     timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - run: |
           set +e
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          mkdir d
-          curl -s -L -m 30 -A "$UA" -H 'Accept: application/json' -H 'X-Requested-With: XMLHttpRequest' -w "json %{http_code} %{size_download}\n" -o d/search.json "https://miixyscards.ch/recherche?controller=search&s=30e+anniversaire" >> d/codes.txt
-          sleep 3
-          curl -s -L -m 30 -A "$UA" -H 'Accept: text/html' -w "html %{http_code} %{size_download}\n" -o d/search.html "https://miixyscards.ch/recherche?controller=search&s=30e+anniversaire" >> d/codes.txt
-          sleep 3
-          curl -s -L -m 30 -A "$UA" -H 'Accept: text/html' -w "home %{http_code} %{size_download}\n" -o d/home.html "https://miixyscards.ch/" >> d/codes.txt
+          jq '.searches |= map(select(.name|startswith("Miixys")))' watch.json > w.json && mv w.json watch.json
+          node watch.mjs > out.txt 2>&1
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out; exit 0
+          git checkout -q --orphan diag-out2; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out2; exit 0

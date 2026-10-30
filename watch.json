@@ -526,6 +526,62 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "Miixys Cards — Pokémon 30 ans FR",
+      "shop": "prestashop",
+      "base": "https://miixyscards.ch",
+      "link": "https://miixyscards.ch/recherche?controller=search&s=30e+anniversaire",
+      "pages": [
+        "/recherche?controller=search&s=30e+anniversaire&order=product.date_add.desc",
+        "/recherche?controller=search&s=ultra+premium&order=product.date_add.desc",
+        "/36-francais?order=product.date_add.desc",
+        "/58-figurines?order=product.date_add.desc"
+      ],
+      "pauseMs": 2000,
+      "match": {
+        "anyOf": [
+          [
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue",
+          "naruto",
+          "one piece",
+          "dragon ball",
+          "lorcana",
+          "yu-gi-oh",
+          "magic"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
