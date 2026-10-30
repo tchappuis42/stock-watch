@@ -1,0 +1,21 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set +e
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          mkdir d
+          curl -s -L -m 30 -A "$UA" -H 'Accept: application/json' -H 'X-Requested-With: XMLHttpRequest' -w "json %{http_code} %{size_download}\n" -o d/search.json "https://miixyscards.ch/recherche?controller=search&s=30e+anniversaire" >> d/codes.txt
+          sleep 3
+          curl -s -L -m 30 -A "$UA" -H 'Accept: text/html' -w "html %{http_code} %{size_download}\n" -o d/search.html "https://miixyscards.ch/recherche?controller=search&s=30e+anniversaire" >> d/codes.txt
+          sleep 3
+          curl -s -L -m 30 -A "$UA" -H 'Accept: text/html' -w "home %{http_code} %{size_download}\n" -o d/home.html "https://miixyscards.ch/" >> d/codes.txt
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out; exit 0
