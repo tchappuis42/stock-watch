@@ -1,0 +1,3 @@
+1 200 237134 text/html; charset=utf-8 /
+2 200 145991 application/json; charset=utf-8 /products.json?limit=250
+3 400 11 text/plain /wp-json/wc/store/v1/products?search=30&per_page=100
