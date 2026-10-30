@@ -1,0 +1,5 @@
+1 200 144037 /wp-json/wc/store/v1/products?search=30%20ans&per_page=100
+2 200 2 /wp-json/wc/store/v1/products?search=30e&per_page=100
+3 200 1191086 /wp-json/wc/store/v1/products?search=pokemon&per_page=100&orderby=date&order=desc
+4 200 240952 /produit/coffret-pokemon-ultra-premium-journee-me05-5-celebration-30-ans/
+5 200 245226 /produit/coffret-pokemon-ultra-premium-soiree-me05-5-celebration-30-ans/
