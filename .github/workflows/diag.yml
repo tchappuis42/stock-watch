@@ -8,12 +8,12 @@ jobs:
     timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - run: |
           set +e
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          mkdir d; n=0
-          for u in "/" "/products.json?limit=250" "/wp-json/wc/store/v1/products?search=30&per_page=100" "/search/suggest.json?q=30&resources[type]=product"; do
-            n=$((n+1)); curl -s -L -m 30 -A "$UA" -w "$n %{http_code} %{size_download} %{content_type} $u\n" -o d/$n.out "https://pocketdex.ch$u" >> d/codes.txt; sleep 2
-          done
+          jq '.searches |= map(select(.name|startswith("PocketDex")))' watch.json > w.json && mv w.json watch.json
+          node watch.mjs > out.txt 2>&1
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out6; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out6; exit 0
+          git checkout -q --orphan diag-out7; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out7; exit 0

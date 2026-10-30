@@ -639,6 +639,58 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "PocketDex — Pokémon 30 ans FR",
+      "shop": "shopify",
+      "base": "https://pocketdex.ch",
+      "link": "https://pocketdex.ch/collections/all",
+      "pages": [
+        "/products.json?limit=250"
+      ],
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
