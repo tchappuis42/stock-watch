@@ -582,6 +582,63 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "BD Fan Comics — Pokémon 30 ans FR",
+      "shop": "woocommerce",
+      "base": "https://www.bdfancomics.ch",
+      "link": "https://www.bdfancomics.ch/?s=30+ans&post_type=product",
+      "pages": [
+        "/wp-json/wc/store/v1/products?search=30%20ans&per_page=100",
+        "/wp-json/wc/store/v1/products?search=celebration&per_page=100",
+        "/wp-json/wc/store/v1/products?search=ultra%20premium&per_page=100"
+      ],
+      "pauseMs": 2000,
+      "defaultLanguage": "FR",
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue",
+          "25 ans"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
