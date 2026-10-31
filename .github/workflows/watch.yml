@@ -12,9 +12,12 @@ on:
         type: boolean
         default: true
 
+# A new pass cancels the previous one if it is still there. A pass lasts at most a few minutes, so this
+# normally only hits a run stuck in GitHub's queue (it once sat "queued" for 6 h and held back every pass).
+# Alerts already sent are kept: state.json is written after each shop and saved even when cancelled.
 concurrency:
   group: stock-watch
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   watch:
