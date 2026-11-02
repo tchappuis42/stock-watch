@@ -468,7 +468,33 @@ async function listPrestaShopHtml(base, path) {
   }).filter((p) => p.id && p.name);
 }
 
-const LISTERS = { prestashop: listPrestaShop, woocommerce: listWooCommerce, shopify: listShopify, shopware: listShopware, wix: listWix, cscart: listCsCart, playin: listPlayin, prestashopHtml: listPrestaShopHtml };
+// Odoo eCommerce (rouge-kards.ch). Each product of a /shop listing is a
+// <form class="oe_product_cart" aria-label="<name>"> with a link, a "oe_currency_value" price and, when it
+// cannot be ordered, a ribbon ("o_wsale_ribbon") reading "Rupture de stock". No ribbon (or "Précommande",
+// "Nouveau"…) = the product page has its add-to-cart button.
+async function listOdoo(base, path) {
+  const h = await getHtml(new URL(path, base));
+  return h.split(/class="oe_product_cart/).slice(1).map((chunk) => {
+    const c = chunk.slice(0, chunk.indexOf('</form>') + 1 || undefined);
+    const name = decode(between(c, /aria-label="([^"]+)"/) ?? '');
+    const href = between(c, /href="(\/shop\/[^"]+)"/);
+    const ribbon = decode(text(between(c, /o_wsale_ribbon[^>]*>([^<]*)</) ?? ''));
+    const blocked = /rupture|epuise|indisponible|bientot|prochainement/.test(norm(ribbon));
+    const price = between(c, /oe_currency_value">([^<]+)/);
+    return {
+      id: href?.match(/-(\d+)(?:[?#]|$)/)?.[1] ?? href,
+      name,
+      price: price ? `${price} CHF` : '?',
+      url: href && new URL(href, base).href,
+      orderable: !blocked,
+      status: ribbon || (blocked ? 'pas commandable' : 'commandable'),
+      categories: [],
+      language: nameLanguage(name),
+    };
+  }).filter((p) => p.id && p.name);
+}
+
+const LISTERS = { prestashop: listPrestaShop, woocommerce: listWooCommerce, shopify: listShopify, shopware: listShopware, wix: listWix, cscart: listCsCart, playin: listPlayin, prestashopHtml: listPrestaShopHtml, odoo: listOdoo };
 
 // Each group is a list of words; the name must contain at least one word of EVERY group, and none of `exclude`.
 const hasWord = (name, w) => new RegExp(`(^|[^a-z0-9])${norm(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z0-9])`).test(name);

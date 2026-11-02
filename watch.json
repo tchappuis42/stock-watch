@@ -691,6 +691,62 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "Rouge Kards — Pokémon 30 ans FR",
+      "shop": "odoo",
+      "base": "https://www.rouge-kards.ch",
+      "link": "https://www.rouge-kards.ch/shop/category/pokemon-2",
+      "pages": [
+        "/shop/category/pokemon-2?order=create_date+desc",
+        "/shop/category/pokemon-2/page/2?order=create_date+desc",
+        "/shop?search=30+ans",
+        "/shop?search=ultra+premium"
+      ],
+      "pauseMs": 2000,
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
