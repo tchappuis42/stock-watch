@@ -1,0 +1,4 @@
+1 200 166407 text/html; charset=utf-8 https://www.rouge-kards.ch/shop/category/pokemon-2
+2 200 167559 text/html; charset=utf-8 https://www.rouge-kards.ch/shop/category/pokemon-2?order=create_date+desc&ppg=100
+3 200 147170 text/html; charset=utf-8 https://www.rouge-kards.ch/shop?search=30&ppg=100
+4 200 166625 text/html; charset=utf-8 https://www.rouge-kards.ch/shop/category/pokemon-2/page/2

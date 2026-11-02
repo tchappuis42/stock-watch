@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html lang="fr-FR" data-website-id="1" data-main-object="product.public.category(2,)">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="generator" content="Odoo"/>
+        <meta name="description" content="Cartes Pokémon TCG en Suisse : boosters, displays, coffrets Dresseur d’Élite et accessoires officiels. Produits authentiques et livraison suivie."/>
+        <meta name="keywords" content="pokémon,TCG,TCG Suisse"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Cartes Pokémon TCG en Suisse | Rouge-Kards"/>
+        <meta property="og:site_name" content="Rouge-Kards"/>
+        <meta property="og:url" content="https://www.rouge-kards.ch/shop/category/pokemon-2"/>
+        <meta property="og:image" content="https://www.rouge-kards.ch/web/image/website/1/logo?unique=4d0e940"/>
+        <meta property="og:description" content="Cartes Pokémon TCG en Suisse : boosters, displays, coffrets Dresseur d’Élite et accessoires officiels. Produits authentiques et livraison suivie."/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Cartes Pokémon TCG en Suisse | Rouge-Kards"/>
+        <meta name="twitter:image" content="https://www.rouge-kards.ch/web/image/website/1/logo?unique=4d0e940"/>
+        <meta name="twitter:description" content="Cartes Pokémon TCG en Suisse : boosters, displays, coffrets Dresseur d’Élite et accessoires officiels. Produits authentiques et livraison suivie."/>
+        
+        <link rel="canonical" href="https://www.rouge-kards.ch/shop/category/pokemon-2"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title>Cartes Pokémon TCG en Suisse | Rouge-Kards</title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/1/favicon?unique=9e4468e"/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/1/64a27f5/web.assets_frontend.min.css"/>
+            <script src="/website/static/src/js/content/cookie_watcher.js"></script>
+            <script>
+                watch3rdPartyScripts(["youtu.be", "youtube.com", "youtube-nocookie.com", "instagram.com", "instagr.am", "ig.me", "vimeo.com", "dailymotion.com", "dai.ly", "youku.com", "tudou.com", "facebook.com", "facebook.net", "fb.com", "fb.me", "fb.watch", "tiktok.com", "x.com", "twitter.com", "t.co", "googletagmanager.com", "google-analytics.com", "google.com", "google.ad", "google.ae", "google.com.af", "google.com.ag", "google.al", "google.am", "google.co.ao", "google.com.ar", "google.as", "google.at", "google.com.au", "google.az", "google.ba", "google.com.bd", "google.be", "google.bf", "google.bg", "google.com.bh", "google.bi", "google.bj", "google.com.bn", "google.com.bo", "google.com.br", "google.bs", "google.bt", "google.co.bw", "google.by", "google.com.bz", "google.ca", "google.cd", "google.cf", "google.cg", "google.ch", "google.ci", "google.co.ck", "google.cl", "google.cm", "google.cn", "google.com.co", "google.co.cr", "google.com.cu", "google.cv", "google.com.cy", "google.cz", "google.de", "google.dj", "google.dk", "google.dm", "google.com.do", "google.dz", "google.com.ec", "google.ee", "google.com.eg", "google.es", "google.com.et", "google.fi", "google.com.fj", "google.fm", "google.fr", "google.ga", "google.ge", "google.gg", "google.com.gh", "google.com.gi", "google.gl", "google.gm", "google.gr", "google.com.gt", "google.gy", "google.com.hk", "google.hn", "google.hr", "google.ht", "google.hu", "google.co.id", "google.ie", "google.co.il", "google.im", "google.co.in", "google.iq", "google.is", "google.it", "google.je", "google.com.jm", "google.jo", "google.co.jp", "google.co.ke", "google.com.kh", "google.ki", "google.kg", "google.co.kr", "google.com.kw", "google.kz", "google.la", "google.com.lb", "google.li", "google.lk", "google.co.ls", "google.lt", "google.lu", "google.lv", "google.com.ly", "google.co.ma", "google.md", "google.me", "google.mg", "google.mk", "google.ml", "google.com.mm", "google.mn", "google.com.mt", "google.mu", "google.mv", "google.mw", "google.com.mx", "google.com.my", "google.co.mz", "google.com.na", "google.com.ng", "google.com.ni", "google.ne", "google.nl", "google.no", "google.com.np", "google.nr", "google.nu", "google.co.nz", "google.com.om", "google.com.pa", "google.com.pe", "google.com.pg", "google.com.ph", "google.com.pk", "google.pl", "google.pn", "google.com.pr", "google.ps", "google.pt", "google.com.py", "google.com.qa", "google.ro", "google.ru", "google.rw", "google.com.sa", "google.com.sb", "google.sc", "google.se", "google.com.sg", "google.sh", "google.si", "google.sk", "google.com.sl", "google.sn", "google.so", "google.sm", "google.sr", "google.st", "google.com.sv", "google.td", "google.tg", "google.co.th", "google.com.tj", "google.tl", "google.tm", "google.tn", "google.to", "google.com.tr", "google.tt", "google.com.tw", "google.co.tz", "google.com.ua", "google.co.ug", "google.co.uk", "google.com.uy", "google.co.uz", "google.com.vc", "google.co.ve", "google.co.vi", "google.com.vn", "google.vu", "google.ws", "google.rs", "google.co.za", "google.co.zm", "google.co.zw", "google.cat"]);
+            </script>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_public": true, "is_internal_user": false, "is_website_user": true, "uid": null, "registry_hash": "142f584dc4a2008fec54e29a63604ba602a3ab72e6d8925d7c75d62d2ef9af48", "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "currencies": {"4": {"name": "CHF", "symbol": "CHF", "position": "before", "digits": [69, 2]}, "125": {"name": "EUR", "symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "143": {"name": "GBP", "symbol": "\u00a3", "position": "before", "digits": [69, 2]}, "170": {"name": "XP", "symbol": "XP", "position": "after", "digits": [69, 0]}}, "quick_login": true, "bundle_params": {"lang": "fr_FR", "website_id": 1}, "test_mode": false, "websocket_worker_version": "19.0-2", "translationURL": "/website/translations", "translation_hash": "70fe3452ec2671bb5700d381ce217c5b9194abfe", "geoip_country_code": "US", "geoip_phone_code": 1, "lang_url_code": "fr", "add_to_cart_action": "stay"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script type="text/javascript" defer="defer" src="/web/assets/1/4f229f7/web.assets_frontend_minimal.min.js" onerror="__odooAssetError=1"></script>
+        <script type="text/javascript" data-src="/web/assets/1/a732fe7/web.assets_frontend_lazy.min.js" onerror="__odooAssetError=1"></script>
+        
+            <script id="tracking_code" async="async" src="about:blank" data-need-cookies-approval="true" data-nocookie-src="https://www.googletagmanager.com/gtag/js?id=G-VENR02RZ9D"></script>
+            <script id="tracking_code_config">
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied',
+                });
+                gtag('js', new Date());
+                gtag('config', 'G-VENR02RZ9D');
+                function allConsentsGranted() {
+                    gtag('consent', 'update', {
+                        'ad_storage': 'granted',
+                        'ad_user_data': 'granted',
+                        'ad_personalization': 'granted',
+                        'analytics_storage': 'granted',
+                    });
+                }
+                    document.addEventListener(
+                        "optionalCookiesAccepted",
+                        allConsentsGranted,
+                        {once: true}
+                    );
+            </script>
+            <script id="plausible_script" name="plausible" defer="defer" data-domain="rouge-kards.odoo.com-3d58" src="https://download.odoo.com/js/plausi_saas.js"></script>
+            
+            <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Rouge-Kards SNC",
+    "logo": "https://www.rouge-kards.ch/logo.png?company=1",
+    "url": "https://www.rouge-kards.ch"
+}
+            </script>
+
+             
+        <!-- Bandeau sur toutes les pages -->
+<!-- <div id="rk-absence-banner">
+   🚨 Expéditions adaptées du 22.05 au 26.05 — Les commandes passées après le 21.05 à 12h00 seront expédiées dès le 27.05. Merci pour votre compréhension ❤️
+</div> --!>
+
+<!-- <style>
+  #rk-absence-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f7c948;
+    color: #1f1f1f;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px 12px;
+    z-index: 99999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  #wrapwrap {
+    padding-top: 48px !important;
+  }
+
+  @media (max-width: 768px) {
+
+    #rk-absence-banner {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+    
+/* Ajustement mobile du menu */
+    #wrapwrap {
+      padding-top: 64px !important;
+    }
+
+    #wrapwrap > header {
+      margin-top: 0 !important;
+    }
+
+    .offcanvas,
+    .modal,
+    .o_mega_menu,
+    .o_mobile_menu,
+    .o_header_mobile .navbar-collapse {
+      padding-top: 64px !important;
+    }
+  }
+</style> -->
+    </head>
+    <body>
+        
+
+
+
+        <div id="wrapwrap" class="   ">
+            <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0" href="#wrap">Se rendre au contenu</a>
+                <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Bouton d&#39;éléments supplémentaires" class="   o_header_fade_out" style=" ">
+    <nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block shadow-sm ">
+        
+
+            <div id="o_main_nav" class="o_main_nav container">
+                
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo me-4">
+            
+            <span role="img" aria-label="Logo of Rouge-Kards" title="Rouge-Kards"><img src="/web/image/website/1/logo/Rouge-Kards?unique=9e4468e" class="img img-fluid" width="95" height="40" alt="Rouge-Kards" loading="lazy"/></span>
+        </a>
+    
+                
+    <ul role="menu" id="top_menu" class="nav navbar-nav top_menu o_menu_loading  me-auto ">
+        
+                    
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/shop" class="nav-link ">
+            <span>Boutique</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item position-static  dropdown">
+        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="menuitem" class="dropdown-toggle nav-link o_mega_menu_toggle  " data-bs-display="static">
+            <span>Infos utiles</span>
+        </a>
+        
+        <div data-name="Mega Menu" role="menuitem" class="o_mega_menu dropdown-menu border-top-0 border-top-0">
+    
+
+
+
+<section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 pt16 pb24 o_colored_level">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">Informations légales</h4>
+                    <div class="s_hr pt4 pb16" data-name="Séparateur">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-color: var(--primary);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/cgv#top" class="nav-link px-0" data-name="Menu Item">Conditions Générales de Vente (CGV)</a><a href="/cgu#top" class="nav-link px-0" data-name="Menu Item">Conditions Générales d'Utilisation (CGU)</a>
+                        <a href="/politique-de-confidentialite#top" class="nav-link px-0" data-name="Menu Item">Politique de confidentialité</a>
+                        <a href="/politique-de-cookies#top" class="nav-link px-0" data-name="Menu Item">Politique de cookies</a>
+                        <a href="/mentions-legales-txt#top" class="nav-link px-0" data-name="Menu Item">Mentions légales</a>
+                        
+                        
+                    </nav>
+                </div><div class="col-12 pt16 pb24 o_colored_level col-lg-3">
+                    <h4 class="text-uppercase h5 fw-bold mt-0">A propos de Rouge-Kards</h4>
+                    <div class="s_hr pt4 pb16 o_colored_level" data-name="Séparateur">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-color: var(--primary);">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="/f-a-q#top">Foire aux questions (FAQ)</a></nav>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        <div class="container-fluid border-top s_mega_menu_odoo_menu_footer">
+            <div class="row">
+                <div class="s_mega_menu_gray_area col-12 pt8 pb8 o_colored_level">
+                    <div class="s_social_media text-center o_not_editable" data-snippet="s_social_media" data-name="Social Media">
+                        <h5 class="s_social_media_title d-none">Suivez-nous</h5>
+<a href="/website/social/facebook" class="s_social_media_facebook me-3 ms-3" target="_blank" aria-label="Facebook">
+                            <i class="fa fa-2x fa-facebook m-1 o_editable_media"></i>
+                        </a>
+<a href="/website/social/twitter" class="s_social_media_twitter me-3 ms-3" target="_blank" aria-label="X">
+                            <i class="fa fa-2x fa-twitter m-1 o_editable_media"></i>
+                        </a>
+<a href="/website/social/instagram" class="s_social_media_instagram me-3 ms-3" target="_blank" aria-label="Instagram">
+                            <i class="fa fa-2x fa-instagram m-1 o_editable_media"></i>
+                        </a>
+<a href="/website/social/tiktok" class="s_social_media_tiktok me-3 ms-3" target="_blank" aria-label="TikTok">
+                            <i class="fa fa-2x fa-tiktok m-1 o_editable_media"></i>
+                        </a>
+</div>
+                </div>
+            </div>
+        </div>
+    </section></div>
+        
+        <ul role="menu" class="dropdown-menu ">
+        </ul>
+        
+    </li>
+                
+    </ul>
+                
+                <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 justify-content-end ps-3">
+                    
+        <li class=" divider d-none"></li> 
+        <li class="o_wsale_my_cart  ">
+            <a href="/shop/cart" aria-label="Panier eCommerce" class="o_navlink_background btn position-relative rounded-circle p-1 text-center text-reset">
+                <div class="">
+                    <i class="fa fa-shopping-cart fa-stack"></i>
+                    <sup class="my_cart_quantity badge bg-primary position-absolute top-0 end-0 mt-n1 me-n1 rounded-pill d-none">0</sup>
+                </div>
+            </a>
+        </li>
+        <li class="o_wsale_my_wish  ">
+            <a href="/shop/wishlist" class="o_navlink_background btn position-relative rounded-circle p-1 text-center text-reset">
+                <div class="">
+                    <i class="fa fa-1x fa-heart fa-stack"></i>
+                    <sup class="my_wish_quantity o_animate_blink badge bg-primary position-absolute top-0 end-0 mt-n1 me-n1 rounded-pill d-none">0</sup>
+                </div>
+            </a>
+        </li>
+        <li class="">
+                <div class="modal fade css_editable_mode_hidden" id="o_search_modal" aria-hidden="true" tabindex="-1">
+                    <div class="modal-dialog modal-lg pt-5">
+                        <div class="modal-content mt-5">
+    <form method="get" class="o_searchbar_form s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group input-group-lg">
+        <input type="search" name="search" class="search-query form-control oe_search_box border border-end-0 p-3 border-0 bg-light" placeholder="Chercher dans Pokémon" value="" data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button border border-start-0 px-4 bg-o-color-4">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by oe_unremovable" value="name asc"/>
+            
+        </form>
+                        </div>
+                    </div>
+                </div>
+                <a data-bs-target="#o_search_modal" data-bs-toggle="modal" role="button" title="Rechercher" href="#" class="btn rounded-circle p-1 lh-1 o_navlink_background text-reset o_not_editable">
+                    <i class="oi oi-search fa-stack lh-lg"></i>
+                </a>
+        </li>
+                    
+                    
+                    
+                    
+            <li class=" o_no_autohide_item">
+                <a href="/web/login" class="o_nav_link_btn nav-link border px-3">Se connecter</a>
+            </li>
+                    
+                    
+        <li class="">
+            <div class="oe_structure oe_structure_solo ">
+                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <a href="/contactus" class="oe_unremovable btn btn-primary btn_cta" aria-describedby="popover391329">Contactez-nous</a>
+                    </div>
+                </section>
+            </div>
+        </li>
+                </ul>
+            </div>
+        
+    </nav>
+
+    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
+        
+
+        <div class="o_main_nav container flex-wrap justify-content-between">
+            <div class="d-flex flex-grow-1">
+                
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of Rouge-Kards" title="Rouge-Kards"><img src="/web/image/website/1/logo/Rouge-Kards?unique=9e4468e" class="img img-fluid" width="95" height="40" alt="Rouge-Kards" loading="lazy"/></span>
+        </a>
+    
+                <ul class="o_header_mobile_buttons_wrap navbar-nav d-flex flex-row align-items-center gap-2 mb-0 ms-auto">
+        <li class=" divider d-none"></li> 
+        <li class="o_wsale_my_cart  ">
+            <a href="/shop/cart" aria-label="Panier eCommerce" class="o_navlink_background_hover btn position-relative rounded-circle border-0 p-1 text-reset">
+                <div class="">
+                    <i class="fa fa-shopping-cart fa-stack"></i>
+                    <sup class="my_cart_quantity badge bg-primary position-absolute top-0 end-0 mt-n1 me-n1 rounded-pill d-none">0</sup>
+                </div>
+            </a>
+        </li>
+        <li class="o_wsale_my_wish  ">
+            <a href="/shop/wishlist" class="o_navlink_background_hover btn position-relative rounded-circle border-0 p-1 text-reset">
+                <div class="">
+                    <i class="fa fa-1x fa-heart fa-stack"></i>
+                    <sup class="my_wish_quantity o_animate_blink badge bg-primary position-absolute top-0 end-0 mt-n1 me-n1 d-none">0</sup>
+                </div>
+            </a>
+        </li></ul>
+            </div>
+            <button class="nav-link btn p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
+                <div class="offcanvas-header justify-content-end o_not_editable">
+                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100 pt-0">
+                    <ul class="navbar-nav">
+                        
+        <li class="">
+    <form method="get" class="o_searchbar_form s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group mb-3">
+        <input type="search" name="search" class="search-query form-control oe_search_box rounded-start-pill text-bg-light ps-3 border-0 bg-light" placeholder="Chercher dans Pokémon" value="" data-search-type="all" data-limit="0" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button rounded-end-pill bg-o-color-3 pe-3">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by oe_unremovable" value="name asc"/>
+            
+        </form>
+        </li>
+                        
+                        <li>
+    <ul role="menu" class="nav navbar-nav top_menu  o_mega_menu_is_offcanvas mx-n3  ">
+        
+                                
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/shop" class="nav-link p-3 text-wrap ">
+            <span>Boutique</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top border-bottom position-static  dropdown">
+        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="menuitem" class="dropdown-toggle nav-link p-3 text-wrap o_mega_menu_toggle  d-flex justify-content-between align-items-center" data-bs-display="static">
+            <span>Infos utiles</span>
+        </a>
+        
+        
+        <div class="o_mega_nav o_cc1 position-fixed top-0 end-0 invisible d-flex align-items-center w-100">
+            <button class="btn nav-link oi oi-chevron-left ms-n2 px-2"></button>
+        </div>
+        
+    </li>
+                            
+    </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                    <ul class="navbar-nav gap-2 mt-3 w-100">
+                        
+                        
+            <li class=" o_no_autohide_item">
+                <a href="/web/login" class="nav-link o_nav_link_btn w-100 border text-center">Se connecter</a>
+            </li>
+                        
+                        
+        <li class="">
+            <div class="oe_structure oe_structure_solo ">
+                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <a href="/contactus" class="oe_unremovable btn btn-primary btn_cta w-100" aria-describedby="popover391329">Contactez-nous</a>
+                    </div>
+                </section>
+            </div>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    </header>
+                <main>
+                    
+
+            
+
+            
+
+
+
+
+
+
+
+            <div id="wrap" class="js_sale o_wsale_products_page">
+                <div class="oe_structure oe_empty oe_structure_not_nearest" id="oe_structure_website_sale_products_1" data-editor-message-default="true" data-editor-message="GLISSEZ UN BLOC ICI"></div><div id="o_wsale_container" class="oe_website_sale                         o_wsale_page_contained container                                                                           o_wsale_has_sidebar                                                  " data-ppg="20" data-ppr="4" data-default-sort="publish_date desc">
+                    <div class="row o_wsale_products_main_row flex-nowrap">
+                        <aside id="products_grid_before" class="d-none d-lg-block position-sticky align-self-start col clearfix pt-2">
+        <div id="oe_structure_website_sale_sidebar_top" class="oe_structure">
+            <section class="s_text_block oe_unmovable oe_unremovable" data-snippet="s_text_block" data-name="Text">
+                <p></p>
+            </section>
+        </div>
+                            <div class="o_wsale_products_grid_before_rail vh-100 ms-n2 px-lg-2 ps-2 overflow-y-scroll">
+                                <div class="products_categories accordion accordion-flush">
+        
+        <div class="accordion-item">
+            <h6 class="o_categories_collapse_title  accordion-header"><button class="accordion-button px-0 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#o_wsale_categories" aria-controls="o_wsale_categories">
+                <b>Catégories</b>
+            </button>
+        </h6>
+            <div name="wsale_products_categories_list" class="wsale_products_categories_list accordion-collapse collapse show" id="o_wsale_categories">
+                <ul class="nav d-flex flex-column mb-3">
+                    <li class="nav-item mb-1">
+                        <a href="/shop" class=" p-0">
+                            Tous les produits
+                        </a>
+                    </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/lorcana-1" class=" p-0">Lorcana</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/magic-the-gathering-9" class=" p-0">Magic : The Gathering</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/pokemon-2" class="text-decoration-underline p-0">Pokémon</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/riftbound-12" class=" p-0">Riftbound</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/yu-gi-oh-3" class=" p-0">Yu-Gi-Oh!</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/accessoires-11" class=" p-0">Accessoires</a>
+            </div>
+        </li>
+                </ul>
+            </div>
+        </div>
+                                </div>
+                                <div class="products_attributes_filters d-empty-none border-top "></div>
+        <div id="oe_structure_website_sale_sidebar_bottom" class="oe_structure">
+            <section class="s_text_block oe_unmovable oe_unremovable" data-snippet="s_text_block" data-name="Text">
+                <p></p>
+            </section>
+        </div>
+                            </div>
+                        </aside>
+                        <div id="products_grid" class="col">
+
+                            <header id="o_wsale_products_header" data-category-id="2" data-category-name="Pokémon" class="d-flex flex-column gap-2                                     pt-4 pb-3                                     o_wsale_products_header_is_category                                                                          o_wsale_products_header_show_category_description                                                                          o_wsale_products_header_show_shop_title                                     ">
+        <ol class="breadcrumb w-100 p-0 mb-0 small mb-2 mb-lg-0">
+            <li class="breadcrumb-item">
+                <a class="" href="/shop">
+                    Produits
+                </a>
+            </li>
+                <li class="breadcrumb-item">
+                    <span class="d-inline-block">Pokémon</span>
+                </li>
+        </ol>
+                                <h1 class="o_wsale_category_title d-flex gap-1 align-items-center mb-0 lh-lg  fs-3">
+                                        <span>Pokémon</span>
+                                </h1>
+                                    <div id="category_header" class="o_wsale_category_description" data-editor-message="
+                                        Faites glisser les blocs ici pour personnaliser l’en-tête de 
+                                        &#34;Pokémon&#34; catégorie.
+                                    ">
+Découvrez nos boosters, displays et coffrets Pokémon officiels, pour collectionneurs et joueurs en Suisse.
+
+</div>
+                                <div class="products_header btn-toolbar flex-nowrap align-items-center justify-content-between gap-1 gap-lg-2 gap-xl-3">
+                                        
+                                        <div class="o_wsale_products_header_search_form_container  col-xl-5 me-auto ">
+    <form method="get" class="o_searchbar_form s_searchbar_input o_wsale_products_searchbar_form me-auto flex-grow-1 " action="/shop/category/pokemon-2" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group ">
+        <input type="search" name="search" class="search-query form-control oe_search_box border-0 text-bg-light border-0 bg-light" placeholder="Chercher dans Pokémon" value="" data-search-type="products" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button btn btn-light">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by oe_unremovable" value="name asc"/>
+            
+        
+        </form>
+                                        </div>
+                                        
+                                        <a data-bs-target="#o_wsale_search_modal" data-bs-toggle="modal" role="button" title="Rechercher des produits" href="#" class="btn o_not_editable d-none me-auto btn-light">
+                                            <i class="oi oi-search" role="img"></i>
+                                        </a>
+        <div class="o_sortby_dropdown dropdown dropdown_sorty_by ">
+            <a role="button" href="#" data-bs-toggle="dropdown" class="dropdown-toggle btn px-2">
+                <span class="d-md-none">Trier par</span>
+                <small class="d-none d-md-inline opacity-75">Trier par:</small>
+                <span class="d-none d-md-inline">
+                    <span>Nouvelles arrivées</span>
+                    
+                </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" role="menu">
+                    <a role="menuitem" rel="noindex,nofollow" href="/shop/category/pokemon-2?order=website_sequence+asc" class="dropdown-item ">
+                        <span>En vedette</span>
+                    </a>
+                    <a role="menuitem" rel="noindex,nofollow" href="/shop/category/pokemon-2?order=publish_date+desc" class="dropdown-item active">
+                        <span>Nouvelles arrivées</span>
+                    </a>
+                    <a role="menuitem" rel="noindex,nofollow" href="/shop/category/pokemon-2?order=name+asc" class="dropdown-item ">
+                        <span>Nom (A-Z)</span>
+                    </a>
+                    <a role="menuitem" rel="noindex,nofollow" href="/shop/category/pokemon-2?order=list_price+asc" class="dropdown-item ">
+                        <span>Prix - Croissant</span>
+                    </a>
+                    <a role="menuitem" rel="noindex,nofollow" href="/shop/category/pokemon-2?order=list_price+desc" class="dropdown-item ">
+                        <span>Prix - Décroissant</span>
+                    </a>
+            </div>
+        </div>
+                                    <button title="Filtres" data-bs-toggle="offcanvas" data-bs-target="#o_wsale_offcanvas" class="btn btn-light position-relative   text-nowrap">
+                                        <i class="oi oi-settings-adjust" role="img"></i>
+                                        <small class="ms-1 ">Filtres</small>
+                                    </button>
+                                </div>
+                            </header>
+
+                            <div class="o_wsale_products_grid_table_wrapper">
+
+                                <section id="o_wsale_products_grid" class="o_wsale_products_grid_table grid                                         o_wsale_products_grid_table_md                                         o_wsale_products_opt_actions_onhover o_wsale_products_opt_img_secondary_show o_wsale_products_opt_layout_catalog o_wsale_products_opt_thumb_cover" style="--o-wsale-ppr: 4; --o-wsale-ppg: 20; --o-wsale-products-grid-gap: 16px;" data-name="Grid">
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Mini-Tin - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-mini-tin-fr-267" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Mini-Tin - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/292/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Mini-Tin%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Mini-Tin - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/732/image_1024/8.webp?unique=70b3a1d" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="8.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-mini-tin-fr-267">
+                            <span>Pokémon - 30 ans - Mini-Tin - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">22,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Bundle de Boosters - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-bundle-de-boosters-fr-268" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Bundle de Boosters - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/293/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Bundle%20de%20Boosters%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Bundle de Boosters - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/739/image_1024/1.webp?unique=3f7c247" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="1.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-bundle-de-boosters-fr-268">
+                            <span>Pokémon - 30 ans - Bundle de Boosters - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">49,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Pokébox (motif aléatoire) - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-pokebox-motif-aleatoire-fr-245" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Pokébox (motif aléatoire) - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/270/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Pok%C3%A9box%20%28motif%20al%C3%A9atoire%29%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Pokébox (motif aléatoire) - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/694/image_1024/3.webp?unique=0d5b1da" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="3.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-pokebox-motif-aleatoire-fr-245">
+                            <span>Pokémon - 30 ans - Pokébox (motif aléatoire) - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">34,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Duopack - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-duopack-fr-240" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Duopack - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/265/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Duopack%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Duopack - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/674/image_1024/2.webp?unique=5fa5ec7" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-duopack-fr-240">
+                            <span>Pokémon - 30 ans - Duopack - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">17,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Collection Poster - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-collection-poster-fr-243" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Collection Poster - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/268/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Collection%20Poster%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Collection Poster - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/683/image_1024/6.webp?unique=287edfc" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="6.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-collection-poster-fr-243">
+                            <span>Pokémon - 30 ans - Collection Poster - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">39,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Coffret Nymphali-ex - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-coffret-nymphali-ex-fr-241" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Coffret Nymphali-ex - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/266/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Coffret%20Nymphali-ex%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Coffret Nymphali-ex - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/679/image_1024/2.webp?unique=59b0bf3" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-coffret-nymphali-ex-fr-241">
+                            <span>Pokémon - 30 ans - Coffret Nymphali-ex - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">34,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Coffret Dresseur d&#39;Élite - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-coffret-dresseur-d-elite-fr-244" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Coffret Dresseur d&#39;Élite - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/269/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Coffret%20Dresseur%20d%27%C3%89lite%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Coffret Dresseur d&#39;Élite - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/689/image_1024/95e27c86f6af300c239228cc6b65892b14947c70_P11454_30th_Celebration_3D_ETB_OuterSleeve_Back_FR.webp?unique=af44aae" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="95e27c86f6af300c239228cc6b65892b14947c70_P11454_30th_Celebration_3D_ETB_OuterSleeve_Back_FR.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-coffret-dresseur-d-elite-fr-244">
+                            <span>Pokémon - 30 ans - Coffret Dresseur d&#39;Élite - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">94,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - 30 ans - Coffret Amphinobi-ex - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-30-ans-coffret-amphinobi-ex-fr-242" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - 30 ans - Coffret Amphinobi-ex - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/267/image_1024/Pok%C3%A9mon%20-%2030%20ans%20-%20Coffret%20Amphinobi-ex%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - 30 ans - Coffret Amphinobi-ex - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/681/image_1024/2.webp?unique=d17cba4" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-30-ans-coffret-amphinobi-ex-fr-242">
+                            <span>Pokémon - 30 ans - Coffret Amphinobi-ex - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">34,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME05 - Pokébox Mega Puissance (motif aléatoire) - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me05-pokebox-mega-puissance-motif-aleatoire-fr-239" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME05 - Pokébox Mega Puissance (motif aléatoire) - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/264/image_1024/Pok%C3%A9mon%20-%20ME05%20-%20Pok%C3%A9box%20Mega%20Puissance%20%28motif%20al%C3%A9atoire%29%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME05 - Pokébox Mega Puissance (motif aléatoire) - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/670/image_1024/5.webp?unique=a60810e" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="5.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me05-pokebox-mega-puissance-motif-aleatoire-fr-239">
+                            <span>Pokémon - ME05 - Pokébox Mega Puissance (motif aléatoire) - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">29,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME04 - Tapis de jeu">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me04-tapis-de-jeu-238" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME04 - Tapis de jeu">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/263/image_1024/Pok%C3%A9mon%20-%20ME04%20-%20Tapis%20de%20jeu?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME04 - Tapis de jeu" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/665/image_1024/4.webp?unique=8d47158" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="4.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me04-tapis-de-jeu-238">
+                            <span>Pokémon - ME04 - Tapis de jeu</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">25,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - EV10 - Display - EN">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-ev10-display-en-202" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - EV10 - Display - EN">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/227/image_1024/Pok%C3%A9mon%20-%20EV10%20-%20Display%20-%20EN?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - EV10 - Display - EN" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/588/image_1024/2.webp?unique=c9856e9" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-ev10-display-en-202">
+                            <span>Pokémon - EV10 - Display - EN</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">309,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - EV06 - Mascarade Crépusculaire - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-ev06-mascarade-crepusculaire-fr-215" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - EV06 - Mascarade Crépusculaire - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/240/image_1024/Pok%C3%A9mon%20-%20EV06%20-%20Mascarade%20Cr%C3%A9pusculaire%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - EV06 - Mascarade Crépusculaire - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/618/image_1024/2.webp?unique=d6cb694" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-ev06-mascarade-crepusculaire-fr-215">
+                            <span>Pokémon - EV06 - Mascarade Crépusculaire - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">99,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - EV02 - Display - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-ev02-display-fr-193" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - EV02 - Display - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/218/image_1024/Pok%C3%A9mon%20-%20EV02%20-%20Display%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - EV02 - Display - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/558/image_1024/2.webp?unique=1498db0" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="2.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-ev02-display-fr-193">
+                            <span>Pokémon - EV02 - Display - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">319,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - EB11 - Display - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-eb11-display-fr-211" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - EB11 - Display - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/236/image_1024/Pok%C3%A9mon%20-%20EB11%20-%20Display%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - EB11 - Display - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/611/image_1024/3.webp?unique=0bbb764" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="3.webp" loading="lazy"/></span>
+
+                
+                    <span data-ribbon-id="2" class="o_ribbons o_not_editable o_wsale_ribbon o_right" style="color: #FFFFFF; background-color:#d9534f">Rupture de stock</span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-eb11-display-fr-211">
+                            <span>Pokémon - EB11 - Display - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">389,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - Championnats du Monde - Deck Liao Fu Guan (Grosmagot-ex) - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-championnats-du-monde-deck-liao-fu-guan-grosmagot-ex-fr-199" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - Championnats du Monde - Deck Liao Fu Guan (Grosmagot-ex) - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/224/image_1024/Pok%C3%A9mon%20-%20Championnats%20du%20Monde%20-%20Deck%20Liao%20Fu%20Guan%20%28Grosmagot-ex%29%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - Championnats du Monde - Deck Liao Fu Guan (Grosmagot-ex) - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/573/image_1024/31.webp?unique=cbbc74f" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="31.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-championnats-du-monde-deck-liao-fu-guan-grosmagot-ex-fr-199">
+                            <span>Pokémon - Championnats du Monde - Deck Liao Fu Guan (Grosmagot-ex) - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">25,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME01 - Deck Méga-Lucario-ex - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me01-deck-mega-lucario-ex-fr-200" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME01 - Deck Méga-Lucario-ex - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/225/image_1024/Pok%C3%A9mon%20-%20ME01%20-%20Deck%20M%C3%A9ga-Lucario-ex%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME01 - Deck Méga-Lucario-ex - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/581/image_1024/4.webp?unique=7450a70" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="4.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me01-deck-mega-lucario-ex-fr-200">
+                            <span>Pokémon - ME01 - Deck Méga-Lucario-ex - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">34,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME04 - Portfolio PRO 9 pochettes">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me04-portfolio-pro-9-pochettes-145" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME04 - Portfolio PRO 9 pochettes">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/170/image_1024/Pok%C3%A9mon%20-%20ME04%20-%20Portfolio%20PRO%209%20pochettes?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME04 - Portfolio PRO 9 pochettes" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/344/image_1024/1.webp?unique=7132887" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="1.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me04-portfolio-pro-9-pochettes-145">
+                            <span>Pokémon - ME04 - Portfolio PRO 9 pochettes</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">29,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME05 - Tripack - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me05-tripack-fr-172" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME05 - Tripack - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/197/image_1024/Pok%C3%A9mon%20-%20ME05%20-%20Tripack%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME05 - Tripack - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/465/image_1024/1.webp?unique=fe04507" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="1.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me05-tripack-fr-172">
+                            <span>Pokémon - ME05 - Tripack - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">19,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME05 - Display - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me05-display-fr-173" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME05 - Display - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/198/image_1024/Pok%C3%A9mon%20-%20ME05%20-%20Display%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME05 - Display - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/470/image_1024/3.webp?unique=e8f26d9" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="3.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me05-display-fr-173">
+                            <span>Pokémon - ME05 - Display - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">219,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                                <div class="oe_product  g-col-6 g-col-md-3 g-col-lg-3 " style="--o-wsale-products-grid-product-col-height: 1;" data-name="Produit">
+                                                    <div class="o_wsale_product_grid_wrapper position-relative h-100 o_wsale_product_grid_wrapper_1_1">
+    
+
+    
+
+    <form role="article" class="oe_product_cart h-100 d-flex " data-publish="on" aria-label="Pokémon - ME05 - Coffret Dresseur d&#39;Élite - FR">
+        <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
+            <input type="hidden" name="csrf_token" value="7e11001d02c3ca363db3c17453491da3c45d1ca9o1825147651"/>
+
+            
+            
+            
+
+            <a contenteditable="false" href="/shop/pokemon-2/pokemon-me05-coffret-dresseur-d-elite-fr-170" class="oe_product_image_link position-relative oe_product_image_link_has_secondary" title="Pokémon - ME05 - Coffret Dresseur d&#39;Élite - FR">
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_primary d-flex h-100 justify-content-center align-items-center"><img src="/web/image/product.product/195/image_1024/Pok%C3%A9mon%20-%20ME05%20-%20Coffret%20Dresseur%20d%27%C3%89lite%20-%20FR?unique=1d4cd9a" class="img img-fluid oe_product_image_img h-100 w-100" alt="Pokémon - ME05 - Coffret Dresseur d&#39;Élite - FR" loading="lazy"/></span>
+
+                
+                <span class="oe_product_image_img_wrapper oe_product_image_img_wrapper_secondary h-100 justify-content-center align-items-center"><img src="/web/image/product.image/456/image_1024/5.webp?unique=0fe8a3a" class="img img-fluid oe_product_image_img_secondary h-100 w-100" alt="5.webp" loading="lazy"/></span>
+
+                
+                    <span class="o_ribbons o_not_editable " style=" "></span>
+            </a>
+        </div>
+        <div class="o_wsale_product_information flex-grow-1 flex-shrink-1">
+            <div class="o_wsale_product_info_attributes_wrapper">
+                
+
+                
+                <div class="o_wsale_product_information_text">
+                    
+                    <h2 class="o_wsale_products_item_title text-break">
+                        <a class="text-decoration-none" href="/shop/pokemon-2/pokemon-me05-coffret-dresseur-d-elite-fr-170">
+                            <span>Pokémon - ME05 - Coffret Dresseur d&#39;Élite - FR</span>
+                        </a>
+                    </h2>
+                    
+
+                    
+
+                </div>
+            </div>
+            <div class="o_wsale_product_sub justify-content-between gap-2">
+                
+                
+                    <div class="product_price" aria-label="Informations sur le prix">
+                        <span class="mb-0 fw-bold" aria-label="Prix de vente" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">CHF <span class="oe_currency_value">69,90</span></span>
+                    </div>
+                
+                <div class="o_wsale_product_btn">
+    
+        <div class="o_wsale_product_action_row">
+
+        </div>
+    
+                </div>
+            </div>
+            
+        </div>
+    </form>
+                                                    </div>
+                                                </div>
+                                </section>
+                            </div>
+                            <div id="o_wsale_pager" class="products_pager d-flex justify-content-center py-5 pb-4">
+        <ul class=" pagination m-0 ">
+            <li class="page-item disabled">
+                <a class="page-link ">
+                    <span class="oi oi-chevron-left" role="img" aria-label="Previous" title="Précédent"></span>
+                </a>
+            </li>
+                <li class="page-item active ">
+                    <a href="/shop/category/pokemon-2" class="page-link  ">1</a>
+                </li>
+                <li class="page-item  ">
+                    <a href="/shop/category/pokemon-2/page/2" class="page-link  ">2</a>
+                </li>
+            <li class="page-item ">
+                <a href="/shop/category/pokemon-2/page/2" class="page-link ">
+                    <span class="oi oi-chevron-right" role="img" aria-label="Next" title="Suivant"></span>
+                </a>
+            </li>
+        </ul>
+                            </div>
+                                <div class="mb16" id="category_footer" data-editor-message="
+                                    Faites glisser les blocs ici pour personnaliser le pied de page pour
+                                    &#34;Pokémon&#34; catégorie.
+                                "><section class="s_title pb40 o_colored_level pt32" data-vcss="001" data-snippet="s_title" data-name="Titre">
+        <div class="s_allow_columns container">
+            <p style="text-align: center;" class="lead">
+        
+<span style="font-size: 1rem;"><strong><font style="color: rgb(0, 49, 99);">Rouge-Kards vous propose un large choix de cartes Pokémon TCG : boosters à l’unité, displays scellés et coffrets exclusifs. Que vous soyez collectionneur à la recherche de cartes rares ou joueur compétitif, nous garantissons des produits authentiques et une expédition rapide depuis la Suisse.</font>
+
+<font style="color: rgb(0, 49, 99);"> </font></strong></span><br></p>
+        </div>
+    </section></div>
+                        </div>
+                    </div>
+
+        <aside id="o_wsale_offcanvas" class="o_website_offcanvas offcanvas offcanvas-end p-0">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+            </div>
+            <div class="offcanvas-body flex-grow-0 overflow-visible">
+    <form method="get" class="o_searchbar_form s_searchbar_input o_wsale_products_searchbar_form me-auto flex-grow-1 " action="/shop/category/pokemon-2" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group ">
+        <input type="search" name="search" class="search-query form-control oe_search_box border-0 text-bg-light border-0 bg-light" placeholder="Chercher dans Pokémon" value="" data-search-type="products" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button btn btn-light">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by oe_unremovable" value="name asc"/>
+            
+        
+        </form>
+            </div>
+            <div id="o_wsale_offcanvas_content" class="accordion accordion-flush flex-grow-1 overflow-auto">
+                
+                <div class="accordion-item d-lg-none">
+                    <h2 id="o_wsale_offcanvas_categories_header" class="accordion-header mb-0">
+                        <button class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o_wsale_offcanvas_categories" aria-expanded="false" aria-controls="o_wsale_offcanvas_categories">
+                                <b>Catégories</b>
+                        </button>
+                    </h2>
+                    <div id="o_wsale_offcanvas_categories" class="accordion-collapse collapse" aria-labelledby="o_wsale_offcanvas_categories_header">
+                        <div class="accordion-body pt-0">
+        
+        <div class="">
+            <h6 class="o_categories_collapse_title d-none accordion-header"><button class="accordion-button px-0 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#o_wsale_categories" aria-controls="o_wsale_categories">
+                <b>Catégories</b>
+            </button>
+        </h6>
+            <div name="wsale_products_categories_list" class="wsale_products_categories_list " id="">
+                <ul class="nav d-flex flex-column mb-3">
+                    <li class="nav-item mb-1">
+                        <a href="/shop" class=" p-0">
+                            Tous les produits
+                        </a>
+                    </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/lorcana-1" class=" p-0">Lorcana</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/magic-the-gathering-9" class=" p-0">Magic : The Gathering</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/pokemon-2" class="text-decoration-underline p-0">Pokémon</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/riftbound-12" class=" p-0">Riftbound</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/yu-gi-oh-3" class=" p-0">Yu-Gi-Oh!</a>
+            </div>
+        </li>
+        
+        
+<li class="nav-item mb-1" data-publish="on">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="/shop/category/accessoires-11" class=" p-0">Accessoires</a>
+            </div>
+        </li>
+                </ul>
+            </div>
+        </div>
+                        </div>
+                    </div>
+                </div>
+        <form method="get" class="js_attributes accordion accordion-flush d-flex flex-column border-bottom wsale_accordion_collapsible accordion accordion-flush" action="/shop/category/pokemon-2">
+
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_10_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_10" aria-controls="o_wsale_offcanvas_attribute_10">
+                            <b>Langue</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_10" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="10-4" value="10-4"/>
+                    <label class="form-check-label fw-normal" for="10-4">Français</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="10-41" value="10-41"/>
+                    <label class="form-check-label fw-normal" for="10-41">Anglais</label>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_9_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_9" aria-controls="o_wsale_offcanvas_attribute_9">
+                            <b>Marque</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_9" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-40" value="9-40"/>
+                    <label class="form-check-label fw-normal" for="9-40">Disney Lorcana</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-42" value="9-42"/>
+                    <label class="form-check-label fw-normal" for="9-42">Magic : The Gathering</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-43" value="9-43"/>
+                    <label class="form-check-label fw-normal" for="9-43">Pokémon</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-109" value="9-109"/>
+                    <label class="form-check-label fw-normal" for="9-109">Riftbound</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-44" value="9-44"/>
+                    <label class="form-check-label fw-normal" for="9-44">Yu-Gi-Oh!</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="9-84" value="9-84"/>
+                    <label class="form-check-label fw-normal" for="9-84">Ultra-Pro</label>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_13_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_13" aria-controls="o_wsale_offcanvas_attribute_13">
+                            <b>Série</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_13" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="my-3">
+                <input type="text" class="o_wsale_attribute_search_bar form-control" placeholder="Search Série (49)" data-container-id="searchable-values-13"/>
+            </div>
+            <div class="overflow-auto" id="searchable-values-13" style="max-height:290px;">
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-104" value="13-104"/>
+                        <label class="form-check-label fw-normal" for="13-104">Championnats du Monde</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-45" value="13-45"/>
+                        <label class="form-check-label fw-normal" for="13-45">Lueur dans les Profondeurs</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-105" value="13-105"/>
+                        <label class="form-check-label fw-normal" for="13-105">Académie de combat</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-46" value="13-46"/>
+                        <label class="form-check-label fw-normal" for="13-46">Flamme Blanche</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-106" value="13-106"/>
+                        <label class="form-check-label fw-normal" for="13-106">EV10 - Rivalités Destinées</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-47" value="13-47"/>
+                        <label class="form-check-label fw-normal" for="13-47">Foudre Noire</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-107" value="13-107"/>
+                        <label class="form-check-label fw-normal" for="13-107">EB12 - Origine Perdue</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-48" value="13-48"/>
+                        <label class="form-check-label fw-normal" for="13-48">Méga-Évolutions</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-108" value="13-108"/>
+                        <label class="form-check-label fw-normal" for="13-108">EV06 - Mascarade Crépusculaire</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-111" value="13-111"/>
+                        <label class="form-check-label fw-normal" for="13-111">Set2 - Spiritforged</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-50" value="13-50"/>
+                        <label class="form-check-label fw-normal" for="13-50">Réimpression</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-110" value="13-110"/>
+                        <label class="form-check-label fw-normal" for="13-110">Set3 - Unleashed</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-51" value="13-51"/>
+                        <label class="form-check-label fw-normal" for="13-51">Hors-Série</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-52" value="13-52"/>
+                        <label class="form-check-label fw-normal" for="13-52">Le Labyrinthe du Maître</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-53" value="13-53"/>
+                        <label class="form-check-label fw-normal" for="13-53">Battle of Legends : Monster Mayhem</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-112" value="13-112"/>
+                        <label class="form-check-label fw-normal" for="13-112">Set4 - Vendetta</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-113" value="13-113"/>
+                        <label class="form-check-label fw-normal" for="13-113">Set5 - Radiance</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-35" value="13-35"/>
+                        <label class="form-check-label fw-normal" for="13-35">Fabuleux</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-56" value="13-56"/>
+                        <label class="form-check-label fw-normal" for="13-56">30 ans</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-60" value="13-60"/>
+                        <label class="form-check-label fw-normal" for="13-60">ME2.5 - Héros Ascendants</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-64" value="13-64"/>
+                        <label class="form-check-label fw-normal" for="13-64">ME03 - Équilibre parfait</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-65" value="13-65"/>
+                        <label class="form-check-label fw-normal" for="13-65">Lorwyn Eclipsé</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-68" value="13-68"/>
+                        <label class="form-check-label fw-normal" for="13-68">Avatar, le dernier maître de l&#39;air</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-69" value="13-69"/>
+                        <label class="form-check-label fw-normal" for="13-69">Assassin&#39;s Creed</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-71" value="13-71"/>
+                        <label class="form-check-label fw-normal" for="13-71">Fondations</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-72" value="13-72"/>
+                        <label class="form-check-label fw-normal" for="13-72">Marvel&#39;s Spider-Man</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-73" value="13-73"/>
+                        <label class="form-check-label fw-normal" for="13-73">Protocole d&#39;explosion</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-74" value="13-74"/>
+                        <label class="form-check-label fw-normal" for="13-74">ME01 - Méga Evolution</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-78" value="13-78"/>
+                        <label class="form-check-label fw-normal" for="13-78">ME02 - Flammes Fantasmagoriques</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-79" value="13-79"/>
+                        <label class="form-check-label fw-normal" for="13-79">L&#39;Evolution du Dueliste</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-80" value="13-80"/>
+                        <label class="form-check-label fw-normal" for="13-80">La Ruée du Quart de Siècle</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-81" value="13-81"/>
+                        <label class="form-check-label fw-normal" for="13-81">Le Désastre des Dimensions</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-82" value="13-82"/>
+                        <label class="form-check-label fw-normal" for="13-82">La Vengence Fantôme</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-83" value="13-83"/>
+                        <label class="form-check-label fw-normal" for="13-83">Les secrets de Strixhaven</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-87" value="13-87"/>
+                        <label class="form-check-label fw-normal" for="13-87">Givresort</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-88" value="13-88"/>
+                        <label class="form-check-label fw-normal" for="13-88">Le Labyrinthe des Morts</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-89" value="13-89"/>
+                        <label class="form-check-label fw-normal" for="13-89">Peluche</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-93" value="13-93"/>
+                        <label class="form-check-label fw-normal" for="13-93">ME04 - Chaos Ascendant</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-94" value="13-94"/>
+                        <label class="form-check-label fw-normal" for="13-94">ME05 - Nuit Noire</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-95" value="13-95"/>
+                        <label class="form-check-label fw-normal" for="13-95">Le Hobbit</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-96" value="13-96"/>
+                        <label class="form-check-label fw-normal" for="13-96">Réalité Fracturée</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-97" value="13-97"/>
+                        <label class="form-check-label fw-normal" for="13-97">Arc-V</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-98" value="13-98"/>
+                        <label class="form-check-label fw-normal" for="13-98">Invasion Épineuse !</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-99" value="13-99"/>
+                        <label class="form-check-label fw-normal" for="13-99">Les Monstres Fantastiques</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-100" value="13-100"/>
+                        <label class="form-check-label fw-normal" for="13-100">EV02 - Évolutions à Paldea</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-101" value="13-101"/>
+                        <label class="form-check-label fw-normal" for="13-101">La Destinée Blanche aux Yeux Bleus</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-102" value="13-102"/>
+                        <label class="form-check-label fw-normal" for="13-102">Retro Pack 2 (reprint)</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-103" value="13-103"/>
+                        <label class="form-check-label fw-normal" for="13-103">Marvel Super Heroes</label>
+                    </div>
+                    <div class="form-check mb-1 list-group-item border-0 ms-3 pb-0">
+                        <input type="checkbox" name="attribute_value" class="form-check-input" id="13-114" value="13-114"/>
+                        <label class="form-check-label fw-normal" for="13-114">Hyperia City</label>
+                    </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_14_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_14" aria-controls="o_wsale_offcanvas_attribute_14">
+                            <b>Catégorie de produit</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_14" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-67" value="14-67"/>
+                    <label class="form-check-label fw-normal" for="14-67">Booster</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-54" value="14-54"/>
+                    <label class="form-check-label fw-normal" for="14-54">Elite Trainer Box (ETB)</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-39" value="14-39"/>
+                    <label class="form-check-label fw-normal" for="14-39">Coffret classeur</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-55" value="14-55"/>
+                    <label class="form-check-label fw-normal" for="14-55">Duopack</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-59" value="14-59"/>
+                    <label class="form-check-label fw-normal" for="14-59">Tripack</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-63" value="14-63"/>
+                    <label class="form-check-label fw-normal" for="14-63">Coffret collection</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-66" value="14-66"/>
+                    <label class="form-check-label fw-normal" for="14-66">Display</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="14-70" value="14-70"/>
+                    <label class="form-check-label fw-normal" for="14-70">Deck</label>
+                </div>
+            </div>
+                <div class="accordion-collapse collapse" id="o_wsale_remaining_values_14" aria-labelledby="o_wsale_view_more_14_header">
+                    <div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-75" value="14-75"/>
+                            <label class="form-check-label fw-normal" for="14-75">Lucnhbox</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-76" value="14-76"/>
+                            <label class="form-check-label fw-normal" for="14-76">Mini-Tin</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-77" value="14-77"/>
+                            <label class="form-check-label fw-normal" for="14-77">Blister</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-85" value="14-85"/>
+                            <label class="form-check-label fw-normal" for="14-85">Classeur</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-86" value="14-86"/>
+                            <label class="form-check-label fw-normal" for="14-86">Pokébox</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-90" value="14-90"/>
+                            <label class="form-check-label fw-normal" for="14-90">Peluche</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-91" value="14-91"/>
+                            <label class="form-check-label fw-normal" for="14-91">Booster Bundle</label>
+                        </div>
+                    </div><div class="list-group-item border-0 ps-0 pb-0">
+                        <div class="form-check mb-1">
+                            <input type="checkbox" name="attribute_value" class="form-check-input" id="14-92" value="14-92"/>
+                            <label class="form-check-label fw-normal" for="14-92">Merchandising</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="o_wsale_view_more_14_header" class="accordion-header mb-0">
+                    <button type="button" class="o_wsale_view_more_btn btn btn-link px-0 collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#o_wsale_remaining_values_14" aria-controls="o_wsale_remaining_values_14">Voir&nbsp;moins</button>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_2_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_2" aria-controls="o_wsale_offcanvas_attribute_2">
+                            <b>Utilisation</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_2" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="2-37" value="2-37"/>
+                    <label class="form-check-label fw-normal" for="2-37">Collectionner</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="2-57" value="2-57"/>
+                    <label class="form-check-label fw-normal" for="2-57">Jouer</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="2-58" value="2-58"/>
+                    <label class="form-check-label fw-normal" for="2-58">Jouer et collectionner</label>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-top-0 order-2">
+                    <h2 class="accordion-header mb-0" id="o_wsale_offcanvas_attribute_7_header">
+                        <button type="button" data-bs-toggle="collapse" class="o_wsale_offcanvas_title accordion-button rounded-0 collapsed" data-status="inactive" data-bs-target="#o_wsale_offcanvas_attribute_7" aria-controls="o_wsale_offcanvas_attribute_7">
+                            <b>Taille de cartes</b>
+                        </button>
+                    </h2>
+        <div data-bs-parent="wsale_products_attributes_collapse" id="o_wsale_offcanvas_attribute_7" class="accordion-collapse collapse  accordion-collapse collapse ">
+                        <div class="accordion-body pt-0">
+                            <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="7-30" value="7-30"/>
+                    <label class="form-check-label fw-normal" for="7-30">Standard</label>
+                </div>
+            </div><div class="list-group-item border-0 ps-0 pb-0">
+                <div class="form-check mb-1">
+                    <input type="checkbox" name="attribute_value" class="form-check-input" id="7-31" value="7-31"/>
+                    <label class="form-check-label fw-normal" for="7-31">Petite</label>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <div id="o_wsale_price_range_option" class="position-relative o_wsale_offcanvas_title accordion accordion-flush px-4 ">
+                <div class="accordion-item">
+                    <div class="accordion-header h6 mb-0">
+                        <button class="accordion-button px-0 bg-transparent shadow-none collapsed" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#o_wsale_price_range_option_inner" aria-controls="o_wsale_price_range_option_inner">
+                            <b>Fourchette de prix</b>
+                        </button>
+                    </div>
+                    <div id="o_wsale_price_range_option_inner" class="accordion-collapse collapse show">
+                        <input type="range" multiple="multiple" class="form-range range-with-input " data-currency="CHF" data-currency-position="before" data-url="/shop/category/pokemon-2" step="0.01" min="5.900000" max="379.900000" value="5.900000,379.900000"/>
+                    </div>
+                </div>
+        </div>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-between flex-grow-0 border-top overflow-hidden">
+                <a title="Supprimer les filtres" class="btn btn-light d-flex py-1 mb-2 disabled" aria-disabled="true" href="/shop/category/pokemon-2">
+                    Supprimer les filtres
+                </a>
+            </div>
+        </aside>
+                </div>
+                <div class="oe_structure oe_empty oe_structure_not_nearest" id="oe_structure_website_sale_products_2" data-editor-message-default="true" data-editor-message="GLISSEZ UN BLOC ICI"></div></div>
+            <div id="o_wsale_search_modal" class="modal fade css_editable_mode_hidden" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-lg pt-5">
+                    <div class="modal-content mt-5 bg-transparent border-0">
+                        <div class="o_container_small">
+    <form method="get" class="o_searchbar_form s_searchbar_input " data-snippet="s_searchbar_input">
+            <div role="search" class="input-group input-group rounded o_cc o_cc1 mb-1">
+        <input type="search" name="search" class="search-query form-control oe_search_box border-0 p-3 " placeholder="Chercher dans Pokémon" value="" data-search-type="products" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button px-4">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by oe_unremovable" value="name asc"/>
+            
+                            
+        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="o_shared_blocks" class="oe_unremovable"></div>
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block d-none o_snippet_mobile_invisible pb0 d-lg-block pt104" data-snippet="s_text_block" data-name="Text" style="position: relative;" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Connections/15&#34;,&#34;colors&#34;:{&#34;c5&#34;:&#34;#F8F9FA&#34;},&#34;flip&#34;:[&#34;y&#34;],&#34;showOnMobile&#34;:false,&#34;shapeAnimationSpeed&#34;:&#34;0&#34;}" data-invisible="1"><div class="o_we_shape o_web_editor_Connections_15" style="background-image: url(&#34;/web_editor/shape/web_editor%2FConnections%2F15.svg?c5=%23F8F9FA&amp;flip=y&#34;); background-position: 50% 0%;"></div>
+                <div class="container-fluid">
+                    <div class="row o_grid_mode" data-row-count="2" style="row-gap: 0px;">
+                        
+                        
+                        
+                        
+                    <div class="o_colored_level o_grid_item g-height-1 col-lg-9 g-col-lg-8 col-lg-8" style="text-align: center; z-index: 5; --grid-item-padding-y: 0px; --grid-item-padding-x: 5px; grid-area: 1 / 3 / 2 / 11;"><p><span class="base-fs"><font class="text-o-color-3">​©&nbsp;2025 Rouge-Kards SNC - Chemin des Myosotis 16, 1214 Vernier - Tous droits réservé - info@rouge-kards.ch</font></span></p></div><div class="o_colored_level o_grid_item g-height-1 g-col-lg-8 col-lg-8" style="z-index: 4; --grid-item-padding-y: 0px; grid-area: 2 / 3 / 3 / 11;"><p style="text-align: center;"><span class="base-fs"><strong><a href="/cgv"><font class="text-o-color-4">Conditions générales de vente (CGV)</font></a></strong></span><span class="o_small-fs"><strong></strong></span><strong></strong><span class="base-fs"><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong></span><strong></strong><span class="o_small-fs"><strong></strong></span><span class="base-fs"><strong><a href="/politique-de-confidentialite">​<font class="text-o-color-4">Politique de c​onfidenti​alité&nbsp; </font></a></strong></span><span class="o_small-fs"><strong></strong></span><strong></strong><span class="base-fs"><strong>&nbsp; &nbsp; &nbsp;</strong></span><strong></strong><span class="o_small-fs"><strong></strong></span><span class="base-fs"><strong><a href="/mentions-legales-txt"><font class="text-o-color-4">Mentions​ ​léga​les</font></a></strong></span><span class="o_small-fs"><strong></strong></span><strong>&nbsp; &nbsp; &nbsp; &nbsp;​<a href="/politique-de-cookies"><span class="base-fs"><font class="text-o-color-4">Politique de cookies</font></span></a></strong></p></div><div class="o_colored_level o_grid_item g-height-2 col-lg-2 g-col-lg-3 col-lg-3" style="--grid-item-padding-y: 0px; z-index: 3; grid-area: 1 / 10 / 3 / 13;"><p style="text-align: center;"><span class="base-fs"><span class="o_text_highlight o_translate_inline o_text_highlight_freehand_1" style="--text-highlight-width: 2px;"><font class="text-o-color-4"><strong>Rejoins-nous su</strong></font><font style="color: rgb(232, 123, 113);"></font><strong>​</strong><font class="text-o-color-4"><strong>r&nbsp;</strong></font></span></span></p><div class="s_social_media o_not_editable s_custom_snippet text-center no_icon_color" data-snippet="s_social_media" data-name="Personnalisé Social Media">
+                                <h5 class="s_social_media_title d-none">Suivez-nous</h5>
+<a target="_blank" href="/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media fa-facebook rounded-empty-circle shadow-sm"></i></a>
+<a target="_blank" href="/website/social/twitter" class="s_social_media_twitter" aria-label="X"><i class="fa o_editable_media fa-twitter rounded-empty-circle shadow-sm"></i></a>
+<a target="_blank" href="/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram rounded-empty-circle shadow-sm"></i></a>
+<a target="_blank" href="/website/social/tiktok" class="s_social_media_tiktok" aria-label="TikTok"><i class="fa o_editable_media fa-tiktok rounded-empty-circle shadow-sm"></i></a>
+</div></div><div class="o_colored_level o_grid_item o_grid_item_image d-lg-block d-none o_snippet_mobile_invisible g-height-2 o_grid_item_image_contain g-col-lg-1 col-lg-1" style="z-index: 1; grid-area: 1 / 2 / 3 / 3;" data-invisible="1"><a href="/" class="o_footer_logo logo">
+                                <img src="/web/image/2838-f5990cf2/Rouge%20Kards%20CARDS.webp" alt="Logo Rouge-Kards footer" class="img-fluid img o_we_custom_image mx-auto d-block" style="animation-play-state: paused; transition: none;" data-mimetype="image/webp" data-original-id="2837" data-original-src="/web/image/2837-f12771c6/Rouge%20Kards%20CARDS.png" data-mimetype-before-conversion="image/png" data-resize-width="NaN" loading="lazy"/></a></div></div>
+                </div>
+            </section><section class="s_text_block pb0 d-lg-none o_snippet_desktop_invisible pt0" data-snippet="s_text_block" data-name="Text" style="position: relative;" data-invisible="1">
+                <div class="container-fluid">
+                    <div class="row">
+                        
+                        
+                        
+                        
+                    <div class="o_colored_level col-lg-1 col-12 d-lg-block d-none o_snippet_mobile_invisible order-lg-0" style="order: 0;" data-invisible="1"><a href="/" class="o_footer_logo logo">
+                                <img src="/web/image/2673-3430f28b/Rouge%20Kards%20R8-01.webp" alt="Logo Rouge-Kards header" class="img-fluid img o_we_custom_image mx-auto d-block o_we_image_cropped" data-mimetype="image/webp" data-original-id="1500" data-original-src="/web/image/1500-14529acf/Rouge%20Kards%20R8-01.png" data-mimetype-before-conversion="image/png" loading="lazy" style="animation-play-state: paused; transition: none;" data-x="569.9911279678346" data-y="213.7034387588501" data-width="753.3043327331543" data-height="753.3043327331543" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1"/></a></div><div class="o_colored_level order-lg-0 col-12 col-lg-10" style="text-align: center; order: 2;"><p><span style="font-size: 0.75rem;"><font class="text-100"><br/>©&nbsp;2025 Rouge-Kards SNC - Chemin des Myosotis 16, 1214 Vernier&nbsp;<br/>Tous droits réservé - info@rouge-kards.ch<br/><strong><a href="https://www.rouge-kards.ch/cgv">Conditions générales de vente (CGV)</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="https://www.rouge-kards.ch/politique-de-confidentialite">Politique de confidentialité&nbsp;</a><br/><a href="/mentions-legales-txt">Mentions​ légales</a>&nbsp; &nbsp; &nbsp; &nbsp;​<a href="/politique-de-cookies#top">Politique de cookies</a></strong></font></span></p></div><div class="o_colored_level col-lg-2 order-lg-0 col-12 pt24" style="order: 1;"><a href="/"><img src="/web/image/4438-27ea830f/Rouge%20Kards%20CARDS.webp" alt="Logo Rouge-Kards footer" class="img img-fluid o_we_custom_image mx-auto d-block" style="width: 25% !important;" data-mimetype="image/webp" data-original-id="2837" data-original-src="/web/image/2837-f12771c6/Rouge%20Kards%20CARDS.png" data-mimetype-before-conversion="image/png" loading="lazy" data-width="1373" data-height="1308.9999999999998" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0"/></a><div class="s_social_media o_not_editable s_custom_snippet no_icon_color text-center" data-snippet="s_social_media" data-name="Personnalisé Social Media">
+                                <h5 class="s_social_media_title d-block">​</h5><h5 class="s_social_media_title d-block"><span class="base-fs"><strong><span class="o_text_highlight o_translate_inline o_text_highlight_freehand_1" style="--text-highlight-width: 2px;">Rejoins-nous sur&nbsp;</span></strong><span style="--text-highlight-width: 2px; --text-highlight-color: #BC2B1E;" class="o_text_highlight o_translate_inline o_text_highlight_freehand_1"></span><font class="text-100"><span style="--text-highlight-width: 2px; --text-highlight-color: #BC2B1E;" class="o_text_highlight o_translate_inline o_text_highlight_freehand_1"></span></font></span></h5>
+<a target="_blank" href="/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media fa-facebook fa-stack"></i></a>
+<a target="_blank" href="/website/social/twitter" class="s_social_media_twitter" aria-label="X"><i class="fa o_editable_media fa-twitter fa-stack"></i></a>
+<a target="_blank" href="/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram fa-stack"></i></a>
+<a target="_blank" href="/website/social/tiktok" class="s_social_media_tiktok" aria-label="TikTok"><i class="fa o_editable_media fa-tiktok fa-stack"></i></a>
+</div></div></div>
+                </div>
+            </section>
+        </div>
+                </footer>
+        <div id="website_cookies_bar" class="s_popup o_snippet_invisible o_no_save d-none" data-name="Cookies Bar" data-vcss="001" data-invisible="1">
+            <div class="modal modal_shown o_cookies_discrete s_popup_bottom" data-show-after="500" data-display="afterDelay" data-consents-duration="999" data-bs-focus="false" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" style="display: none; background-color: rgba(0, 0, 0, 0.64);" aria-hidden="true">
+                <div class="modal-dialog d-flex s_popup_size_full">
+                    <div class="modal-content oe_structure"><section class="o_colored_level o_cc o_cc1"><div class="container"><div class="row"><div class="col-lg-8 pt16 o_colored_level"><p><span class="pe-1">Nous utilisons des cookies pour vous offrir une meilleure expérience utilisateur sur ce site.</span><a href="/politique-de-cookies#top" class="o_cookies_bar_text_policy px-0 o_translate_inline btn btn-link">Politique en matière de cookies</a></p></div><div class="col-lg-4 text-end pb16 o_colored_level pt24"><a href="#" id="cookies-consent-essential" role="button" class="js_close_popup btn btn-outline-primary rounded-circle btn-sm px-2"><span class="base-fs">Que les essentiels</span></a>&nbsp; &nbsp; &nbsp; &nbsp;<span class="base-fs"></span><a href="#" id="cookies-consent-all" role="button" class="js_close_popup btn btn-outline-primary rounded-circle btn-sm"><span class="base-fs">Je suis d'accord</span></a></div></div></div></section></div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* ---------- util CSS (injection une seule fois) ---------- */
+  (function injectOnce() {
+    if (document.getElementById('rk-common-css')) return;
+    const s = document.createElement('style');
+    s.id = 'rk-common-css';
+    s.textContent = `
+      .rk-visually-hidden {
+        position: absolute !important;
+        left: -9999px !important;
+        width: 1px !important;
+        height: 1px !important;
+        opacity: 0 !important;
+      }
+      .rk-hidden {
+        display: none !important;
+      }
+      /* Force l'affichage du label Prénom dans le formulaire infos perso */
+      label[for="rk_first_name"], 
+      #rk_first_name_label {
+        display: block !important;
+        visibility: visible !important;
+      }
+    `;
+    document.head.appendChild(s);
+  })();
+
+  /* ============================================================
+   * A) "Mes informations" (address_form) - robuste (observer)
+   * ============================================================ */
+  (function initAddressForm() {
+    const form = document.querySelector('form[name="address_form"]');
+    if (!form) return;
+
+    const applyEnhancements = () => {
+      const nameGroup = form.querySelector('#div_name');
+      const nameInput = nameGroup && nameGroup.querySelector('input[name="name"]');
+      const nameLabel = nameGroup && nameGroup.querySelector('label');
+      if (!nameGroup || !nameInput) return;
+
+      // 1) cacher "name" visuellement
+      nameInput.classList.add('rk-visually-hidden');
+      if (nameLabel) nameLabel.classList.add('rk-hidden');
+
+      // 2) injecter Prénom/Nom (si pas déjà présents)
+      if (!nameGroup.querySelector('#rk_first_name') && !nameGroup.querySelector('#rk_last_name')) {
+        const firstWrap = document.createElement('div');
+        firstWrap.className = 'form-group mb-2';
+        firstWrap.innerHTML = `
+          <label id="rk_first_name_label" for="rk_first_name">Prénom *</label>
+          <input id="rk_first_name" name="first_name" class="form-control" required autocomplete="given-name">
+        `;
+
+        const lastWrap = document.createElement('div');
+        lastWrap.className = 'form-group mb-2';
+        lastWrap.innerHTML = `
+          <label for="rk_last_name">Nom *</label>
+          <input id="rk_last_name" name="last_name" class="form-control" required autocomplete="family-name">
+        `;
+
+        nameGroup.insertBefore(lastWrap, nameGroup.firstChild);
+        nameGroup.insertBefore(firstWrap, nameGroup.firstChild);
+
+        // Pré-remplir depuis "name" si ce n'est pas un email
+        const raw = (nameInput.value || '').trim();
+        if (raw && !/@/.test(raw)) {
+          const parts = raw.split(/\s+/);
+          const ln = parts.pop() || '';
+          const fn = parts.join(' ');
+          firstWrap.querySelector('input').value = fn;
+          lastWrap.querySelector('input').value = ln;
+        }
+
+        // Sync -> compose "name" depuis first/last
+        const first = firstWrap.querySelector('input');
+        const last = lastWrap.querySelector('input');
+        const compose = () => {
+          nameInput.value = `${(first.value || '').trim()} ${(last.value || '').trim()}`.trim();
+        };
+        first.addEventListener('input', compose, { passive: true });
+        last.addEventListener('input', compose, { passive: true });
+        form.addEventListener('submit', compose, true);
+      }
+
+      // 3) masquer (sans supprimer) les blocs facture + phrase
+      const hideByLabel = (txt) => {
+        const label = Array.from(form.querySelectorAll('label'))
+          .find(l => l.textContent.trim().toLowerCase() === txt.toLowerCase());
+        if (!label) return;
+        const field = label.closest('.form-group, .mb-2, .o_we_form_group, .col, .row > div') || label.parentElement;
+        if (field) {
+          field.classList.add('rk-hidden');
+          field.querySelectorAll('input,select,textarea').forEach(el => {
+            el.disabled = true;
+          });
+        }
+      };
+
+      hideByLabel('Recevoir des factures');
+      hideByLabel('Format électronique');
+
+      const hint = Array.from(form.querySelectorAll('p, .text-muted, small'))
+        .find(p => /Choisissez le mode d'envoi de vos factures/i.test(p.textContent));
+      if (hint) hint.classList.add('rk-hidden');
+    };
+
+    // 1) première application après que le JS Odoo a fini
+    window.addEventListener('load', () => applyEnhancements());
+
+    // 2) ré-appliquer si Odoo modifie le DOM
+    const mo = new MutationObserver(() => {
+      clearTimeout(mo._t);
+      mo._t = setTimeout(applyEnhancements, 50);
+    });
+    mo.observe(form, { childList: true, subtree: true });
+  })();
+
+  /* ============================================================
+   * B) "Inscription" (oe_signup_form)
+   * - Cache le champ name Odoo
+   * - Ajoute Prénom/Nom AVANT le bloc complet Mot de passe
+   * - Compose name = "Prénom Nom"
+   * ============================================================ */
+  (function initSignupForm() {
+    let enhanced = false;
+    let mo;
+
+    function findPasswordAnchor(form, pwdInput) {
+      // 1) On cherche le label "Mot de passe" lié au champ password
+      let pwdLabel = null;
+
+      if (pwdInput.id) {
+        pwdLabel = form.querySelector(`label[for="${pwdInput.id}"]`);
+      }
+
+      if (!pwdLabel) {
+        pwdLabel = Array.from(form.querySelectorAll('label'))
+          .find(label => {
+            const txt = label.textContent.trim().toLowerCase();
+            return txt === 'mot de passe';
+          });
+      }
+
+      // 2) Si le label existe, on insère AVANT le label ou son bloc complet
+      if (pwdLabel) {
+        const labelBlock = pwdLabel.closest('.form-group, .mb-2, .mb-3, .col, .row > div');
+
+        // Si le bloc contient aussi l'input password, on insère avant le bloc complet
+        if (labelBlock && labelBlock.contains(pwdInput)) {
+          return labelBlock;
+        }
+
+        // Sinon, le label est isolé : on insère directement avant le label
+        return pwdLabel;
+      }
+
+      // 3) Fallback : avant le bloc du champ password
+      return pwdInput.closest('.form-group, .mb-2, .mb-3, .col, div') || pwdInput;
+    }
+
+    function enhanceOnce() {
+      if (enhanced) return true;
+
+      const form = document.querySelector('form.oe_signup_form');
+      if (!form) return false;
+
+      const nameInput = form.querySelector('input[name="name"]');
+      const pwdInput = form.querySelector('input[name="password"]');
+
+      if (!nameInput || !pwdInput) return false;
+
+      if (form.dataset.rkSignupEnhanced === '1') {
+        enhanced = true;
+        return true;
+      }
+
+      form.dataset.rkSignupEnhanced = '1';
+
+      // 1) Cacher le champ name Odoo sans le supprimer
+      nameInput.required = false;
+      nameInput.setAttribute('aria-hidden', 'true');
+      nameInput.tabIndex = -1;
+
+      const nameGroup = nameInput.closest('.form-group, .mb-2, .mb-3, .col, div') || nameInput.parentElement;
+      if (nameGroup) {
+        nameGroup.classList.add('rk-hidden');
+      }
+
+      // 2) Créer Prénom/Nom
+      const container = document.createElement('div');
+      container.id = 'rk_signup_name_fields';
+      container.innerHTML = `
+        <div class="mb-2 form-group">
+          <label for="signup_first_name">Prénom</label>
+          <input id="signup_first_name"
+                 name="first_name"
+                 class="form-control"
+                 required
+                 autocomplete="given-name">
+        </div>
+        <div class="mb-2 form-group">
+          <label for="signup_last_name">Nom</label>
+          <input id="signup_last_name"
+                 name="last_name"
+                 class="form-control"
+                 required
+                 autocomplete="family-name">
+        </div>
+      `;
+
+      // 3) Insérer AVANT le vrai bloc "Mot de passe"
+      const anchor = findPasswordAnchor(form, pwdInput);
+      anchor.before(container);
+
+      const first = container.querySelector('#signup_first_name');
+      const last = container.querySelector('#signup_last_name');
+
+      // 4) Pré-remplir si name existe déjà
+      const raw = (nameInput.value || '').trim();
+      if (raw && !/@/.test(raw)) {
+        const parts = raw.split(/\s+/);
+        const ln = parts.pop() || '';
+        const fn = parts.join(' ');
+        first.value = fn;
+        last.value = ln;
+      }
+
+      // 5) Composer le name Odoo
+      const compose = () => {
+        const fn = (first.value || '').trim();
+        const ln = (last.value || '').trim();
+        nameInput.value = `${fn} ${ln}`.trim();
+      };
+
+      first.addEventListener('input', compose, { passive: true });
+      last.addEventListener('input', compose, { passive: true });
+      first.addEventListener('change', compose, { passive: true });
+      last.addEventListener('change', compose, { passive: true });
+
+      form.addEventListener('submit', function (e) {
+        compose();
+
+        if (!first.checkValidity() || !last.checkValidity()) {
+          return;
+        }
+
+        if (!nameInput.value.trim()) {
+          e.preventDefault();
+          first.reportValidity();
+        }
+      }, true);
+
+      enhanced = true;
+      if (mo) mo.disconnect();
+
+      return true;
+    }
+
+    if (enhanceOnce()) return;
+
+    mo = new MutationObserver(() => {
+      enhanceOnce();
+    });
+
+    mo.observe(document.documentElement, {
+      childList: true,
+      subtree: true
+    });
+
+    setTimeout(() => {
+      if (mo) mo.disconnect();
+    }, 8000);
+  })();
+
+});
+</script>
+        </body>
+</html>
