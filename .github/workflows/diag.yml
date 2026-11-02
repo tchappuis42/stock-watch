@@ -1,0 +1,19 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set +e
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          mkdir d; n=0
+          for u in "/shop/category/pokemon-2" "/shop/category/pokemon-2?order=create_date+desc&ppg=100" "/shop?search=30&ppg=100" "/shop/category/pokemon-2/page/2"; do
+            n=$((n+1)); curl -s -L -m 30 -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' -w "$n %{http_code} %{size_download} %{content_type} %{url_effective}\n" -o d/$n.out "https://www.rouge-kards.ch$u" >> d/codes.txt; sleep 2
+          done
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out8; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out8; exit 0
