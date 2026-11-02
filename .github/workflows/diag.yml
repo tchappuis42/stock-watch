@@ -15,11 +15,11 @@ jobs:
           set +e
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
           jq '.searches |= map(select(.name|startswith("Rouge")))' watch.json > w.json && mv w.json watch.json
-          node watch.mjs > out.txt 2>&1
+          true > out.txt
           for u in pokemon-me05-pokebox-mega-puissance-motif-aleatoire-fr-239 pokemon-30-ans-bundle-de-boosters-fr-268; do
             echo "== $u" >> out.txt
-            curl -s -A "$UA" "https://www.rouge-kards.ch/shop/pokemon-2/$u" | grep -oE 'id="add_to_cart"[^>]*>|class="[^"]*(out_of_stock|o_wsale_ribbon|availability|js_check_product)[^"]*"[^>]*>[^<]{0,80}|Rupture[^<]{0,60}|disponible[^<]{0,60}' | head -8 >> out.txt
+            curl -s -A "$UA" "https://www.rouge-kards.ch/shop/pokemon-2/$u" | grep -oiE '.{0,120}(add_to_cart|a-submit|ajouter au panier|rupture|out_of_stock|disabled).{0,80}' | head -12 >> out.txt
             sleep 2
           done
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out9; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out9; exit 0
+          git checkout -q --orphan diag-out10; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out10; exit 0
