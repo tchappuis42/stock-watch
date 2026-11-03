@@ -1,0 +1,25 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          set +e
+          mkdir d
+          jq '.searches |= map(select(.name|startswith("Mix")))' watch.json > w.json && mv w.json watch.json
+          REPORT=1 node watch.mjs > d/out.txt 2>&1
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          for u in "/wp-json/wc/store/v1/products?search=pokemon&per_page=100&orderby=date&order=desc" "/wp-json/wc/store/v1/products?category=30th-celebration&per_page=100"; do
+            curl -s -A "$UA" -H 'Accept: application/json' -D - -o d/body.txt -w "%{http_code} %{size_download} %{content_type}\n" "https://mix-image.ch$u" | grep -iE "^HTTP|^content-type|^server|^cf-|^location|^[0-9]{3} " >> d/codes.txt
+            head -c 600 d/body.txt >> d/codes.txt; echo >> d/codes.txt; sleep 2
+          done
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out13; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out13; exit 0
