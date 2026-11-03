@@ -74,7 +74,10 @@ async function get(url, accept) {
 // JSON answer; a shop sometimes sends an HTML error or maintenance page instead (with status 200):
 // treat it like a page that did not load (try again next pass), not as a bug that fails the run.
 async function getJson(url) {
-  const body = await (await get(url, 'application/json')).text();
+  // .text() can also fail when the connection drops or the timeout hits halfway through a big list.
+  const body = await (await get(url, 'application/json')).text().catch((e) => {
+    throw new Skip(`réponse coupée (${e.message})`);
+  });
   try {
     return JSON.parse(body);
   } catch {
