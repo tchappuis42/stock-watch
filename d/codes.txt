@@ -1,0 +1,10 @@
+HTTP/2 200 
+server: Apache
+content-type: application/json; charset=UTF-8
+200 708734 application/json; charset=UTF-8
+[{"id":5060761091885,"name":"Cartes Pokemon &#8211; Lot de 3 Starter Set ex (JP)","slug":"cartes-pokemon-lot-de-3-starter-set-ex-jp","parent":0,"type":"simple","variation":"","permalink":"https:\/\/mix-image.ch\/produit\/cartes-pokemon-lot-de-3-starter-set-ex-jp\/","sku":"","short_description":"<h3 class=\"p1\"><span style=\"color: #ff0000\"><strong>Sur commande si le produit n\u2019est pas en stock <\/strong><\/span><\/h3>\n<p class=\"p1\"><span style=\"color: #ff0000\"><strong>Information concernant les pr\u00e9commandes de cartes japonaises<\/strong><\/span><\/p>\n<p class=\"p2\"><strong>No
+HTTP/2 200 
+server: Apache
+content-type: application/json; charset=UTF-8
+200 17871 application/json; charset=UTF-8
+[{"id":5060761008489,"name":"Cartes Pokemon \u2013 30th CELEBRATION \u2013 Booster x 20 (JP)","slug":"cartes-pokemon-30th-celebration-booster-x-20-jp","parent":0,"type":"simple","variation":"","permalink":"https:\/\/mix-image.ch\/produit\/cartes-pokemon-30th-celebration-booster-x-20-jp\/","sku":"4521329364704-2029","short_description":"<p><img class=\"alignnone wp-image-5060760920800\" src=\"https:\/\/mix-image.ch\/wp-content\/uploads\/2023\/06\/Pokemon_Trading_Card_Game_logo.svg-1-300x300.png.jpg\" alt=\"\" width=\"94\" height=\"94\" \/><\/p>\n<h3 class=\"p1\"><span style=\"color: #ff0000\"><
