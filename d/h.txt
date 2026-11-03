@@ -1,0 +1,14 @@
+HTTP/2 200 
+date: Tue, 03 Nov 2026 13:15:35 GMT
+content-type: text/html; charset=utf-8
+refresh: 40
+set-cookie: __cfwaitingroom=Chg2YkczYm9vbVFDTFY5NGJ2NUxrVWZnPT0S8AFEZlRvY1JFVXA2N2RUVlFTb1ZtamRGQzJUMnpXd3ZENFZrb0lhOHZySk5RaDJ1U25xK0JUWTM5TjRjVFBobmhtUUMzUGp6cGE0WXJ2c2ZDRWhLeFpERTI5Y3RKN01XZk1aWVREU2lpdTJHOFQxUWJBZDZGMlJpdHNpY1hxSHBMWXJzankrSEd0SmFINklZUVk1OHBmcDRuM0FScTJmdVNZUjNRQmI3Nld2OUVPUlFRbm5tMEwxd3BoVXNWNExpeEFaNlB0NDJZT3NUM3N5UUZMOXJWcUV1Y2xUbm0zMVordmhuaVpuRGhtTG96UFVWckg%3D; Domain=www.play-in.com; Path=/; Expires=Tue, 03 Nov 2026 13:17:35 GMT; HttpOnly; Secure; SameSite=None; Partitioned
+vary: accept-encoding
+expect-ct: max-age=86400, enforce
+referrer-policy: same-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+server: cloudflare
+cf-ray: a54ba60a581fd83a-ORD
+

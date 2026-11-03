@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Waiting Room avec Cloudflare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body,
+      #wrapper {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+
+      html {
+        direction: ltr;
+      }
+
+      #wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+          Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      main .content-container {
+        max-width: 64rem;
+      }
+
+      .center {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .content-container {
+        width: 100%;
+        min-width: 25rem;
+        margin: 0 auto;
+        padding: 2rem 4rem;
+        display: flex;
+        text-align: left;
+      }
+
+      @media (max-width: 900px) {
+        .content-container {
+          flex-direction: column;
+          padding: 2rem 2rem;
+        }
+      }
+
+      main .content-container section {
+        flex: 1 0 0;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+      }
+
+      footer {
+        background: #404242;
+        color: white;
+        font-size: 0.75rem;
+        direction: ltr;
+        min-width: 25rem;
+      }
+
+      footer .content-container {
+        justify-content: space-between;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin: 0 0 1.25rem 0;
+      }
+
+      .links {
+        color: #cac8c8;
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .links a,
+      .links a:visited {
+        text-decoration: none;
+        color: #cac8c8;
+      }
+
+      .logo {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .logo .cloudflare-logo {
+        width: 8.75rem;
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <main>
+        <div class="center">
+          <section class="content-container">
+
+
+            <section>
+              <h1>
+                Vous êtes maintenant dans la file d’attente.
+              </h1>
+              <h1>
+                Merci pour votre patience.
+              </h1>
+            </section>
+            <section>
+              <h2 id="waitTime">
+              </h2>
+              <p>
+                Nous rencontrons actuellement un volume de trafic élevé et nous utilisons une file d’attente virtuelle pour limiter le nombre d’utilisateurs présents simultanément sur le site Web. Vous bénéficiez ainsi de la meilleure expérience en ligne possible.
+              </p>
+            <section>
+              <div class="cf-turnstile" id="turnstile-challenge" data-sitekey="0x4AAAAAAAh8Vtj4Mwk-YskV" data-callback="wrtsc" data-error-callback="wrtse" data-action="88541a3a3a122ff4f83c9c85a6f64d9a" data-language="auto"></div>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+<script>function _0xa152(_0x108b54,_0x4963a7){const _0x555ba1=_0x555b();return _0xa152=function(_0xa152d0,_0x4a4932){_0xa152d0=_0xa152d0-0x99;let _0x3bdf33=_0x555ba1[_0xa152d0];if(_0xa152['sXwhIt']===undefined){var _0x4ae826=function(_0x4b28e9){const _0x25d91d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3f2a07='',_0x252bd4='';for(let _0xf8cd76=0x0,_0xe8ea8e,_0x1c0444,_0x969f38=0x0;_0x1c0444=_0x4b28e9['charAt'](_0x969f38++);~_0x1c0444&&(_0xe8ea8e=_0xf8cd76%0x4?_0xe8ea8e*0x40+_0x1c0444:_0x1c0444,_0xf8cd76++%0x4)?_0x3f2a07+=String['fromCharCode'](0xff&_0xe8ea8e>>(-0x2*_0xf8cd76&0x6)):0x0){_0x1c0444=_0x25d91d['indexOf'](_0x1c0444);}for(let _0x5ee3fd=0x0,_0x5a9b9c=_0x3f2a07['length'];_0x5ee3fd<_0x5a9b9c;_0x5ee3fd++){_0x252bd4+='%'+('00'+_0x3f2a07['charCodeAt'](_0x5ee3fd)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x252bd4);};const _0x9f4a2a=function(_0x2bab44,_0x33a7b7){let _0x27eee1=[],_0x6cb06e=0x0,_0x234ad5,_0x51ebeb='';_0x2bab44=_0x4ae826(_0x2bab44);let _0x31c23a;for(_0x31c23a=0x0;_0x31c23a<0x100;_0x31c23a++){_0x27eee1[_0x31c23a]=_0x31c23a;}for(_0x31c23a=0x0;_0x31c23a<0x100;_0x31c23a++){_0x6cb06e=(_0x6cb06e+_0x27eee1[_0x31c23a]+_0x33a7b7['charCodeAt'](_0x31c23a%_0x33a7b7['length']))%0x100,_0x234ad5=_0x27eee1[_0x31c23a],_0x27eee1[_0x31c23a]=_0x27eee1[_0x6cb06e],_0x27eee1[_0x6cb06e]=_0x234ad5;}_0x31c23a=0x0,_0x6cb06e=0x0;for(let _0x21d0bb=0x0;_0x21d0bb<_0x2bab44['length'];_0x21d0bb++){_0x31c23a=(_0x31c23a+0x1)%0x100,_0x6cb06e=(_0x6cb06e+_0x27eee1[_0x31c23a])%0x100,_0x234ad5=_0x27eee1[_0x31c23a],_0x27eee1[_0x31c23a]=_0x27eee1[_0x6cb06e],_0x27eee1[_0x6cb06e]=_0x234ad5,_0x51ebeb+=String['fromCharCode'](_0x2bab44['charCodeAt'](_0x21d0bb)^_0x27eee1[(_0x27eee1[_0x31c23a]+_0x27eee1[_0x6cb06e])%0x100]);}return _0x51ebeb;};_0xa152['RKsEQk']=_0x9f4a2a,_0x108b54=arguments,_0xa152['sXwhIt']=!![];}const _0x17c541=_0x555ba1[0x0],_0x395fa3=_0xa152d0+_0x17c541,_0x15c36c=_0x108b54[_0x395fa3];return!_0x15c36c?(_0xa152['iWhTsd']===undefined&&(_0xa152['iWhTsd']=!![]),_0x3bdf33=_0xa152['RKsEQk'](_0x3bdf33,_0x4a4932),_0x108b54[_0x395fa3]=_0x3bdf33):_0x3bdf33=_0x15c36c,_0x3bdf33;},_0xa152(_0x108b54,_0x4963a7);}(function(_0x5c7a3e,_0x4865b4){const _0x35599f=_0xa152,_0x57eeab=_0x5c7a3e();while(!![]){try{const _0x3557a6=-parseInt(_0x35599f(0xb1,'db2Q'))/0x1+-parseInt(_0x35599f(0x99,'*gU('))/0x2+-parseInt(_0x35599f(0xb2,'UCG^'))/0x3+parseInt(_0x35599f(0xb0,'P]W^'))/0x4+parseInt(_0x35599f(0xa4,'GXVS'))/0x5*(parseInt(_0x35599f(0x9c,'KXvV'))/0x6)+-parseInt(_0x35599f(0xa3,'m@qz'))/0x7+parseInt(_0x35599f(0xa6,'0evd'))/0x8;if(_0x3557a6===_0x4865b4)break;else _0x57eeab['push'](_0x57eeab['shift']());}catch(_0x52d0d1){_0x57eeab['push'](_0x57eeab['shift']());}}}(_0x555b,0x3c392));function _0x555b(){const _0x23d22a=['W7RcMhTuW5JcGq','W6JcJwPdW5xcJq','lcOHxCkMWQ7cSCoclSoLjSo3W6C','wIHIWR3dLH/cKMDIW6VdGgNcHq','rmoBWOz2WOu','WOj6W4ldIWn/WRhcNCk+WQv6W4K9','e8oSCNPjW4W','WQvStqRcQLmJW7RcPIVdRuxdLSo6c8oKW4SOc8k9WR/dId5gshVcRCkIWRyODSo9WOKPx8ogW4NcVSk1emoZEmoCW7T7jJ7dLCkEWOVcJSo2CNpdHmkyW5pdOrOnba/cL8o8j8oPaCobW4xdIINdNsyZc8o9WOrNWOBdQWJdPmk4nvxdJCk/zvKrc2JdIW7cNH0nBmoWWRiiz8oyWPpdPSoOW5OVjmkZyCkXewpcNY1KW4JcI8oqWRWmWP11WOFcTSkMW6pcRmoFp8oYWPFcKuv/W7hdTNBcU8kdWPj1tSkFASkSWRxdJrJcJ3ddM3JcH8oMoNVdG8omWRDWw8kOWQ3dR0/cULWNbGBcI2lcVCkiWPpdUv3cL8oNW6lcH8kpWQLqn8o+zSk4u2BdOCosW6WRWP0uW5pdUMZdJSopW65iWOBcT3qTCflcKKJdV8kXl0xcNhqUowLsWR3cUSketCoQAxTlW5LbW7qzWPVdHmofhti2WQ8Mt3rPiCo+W5nxgmkvW7BcLSk5WPNdLKS1EY8/pSoEBNBdNH7dP14omSodWOn3W4OikCocD8kDW7v2W7ldTColx8kcW4m+W5XOW7GhnSkRl8opWQldMKnfomoJW43cP8kud8kJbmkrjhhcImoCyCkfW6BcLhOnaSkMWQHOhsKNW712c8kgeHhdThTeW4xdG1dcMxXCdqpcQ8oeEmo3W4n1mSo2A8o8oZNdKrtdKepcO0nzjCoIWQ/cV8odW5CrWQdcNd7dPWSccSoeW6PcWRfeWRCZxSk9WRfxW5pcT0NdGgxdUeNdQmouW4SPW6mIW5lcTCoXW4KeWORdRCkKraddJLhcUmoBhmklW41kDSk5rCkrW4ZdTJRdQMFcRItdICoKivXOAWNdTCorxSoPpspdKmocfhFcRNPnW4e4WPxdJSkaFCoGpdvDsKnhW5f4n8o7uflcUmkHW7z0W4FdTJ9Ie8kIWOlcNCoQW6ZdSXKruazOo1CsE8k7W67cUCkwW6ZdQsKJD8oKdCk6lY3cSCoVpI0yWPnUB8kCdmk7oNFcKWlcUmo5W6y8qSkpWRHQmCk9W6aylHfwmSkSWR/cTeTBBCkNW6aaDNmRWQOka8klDSkzW6eQW5ddOSoXWO3dUGhcIMRdLItdSICXndFdGMxdNSoWxI/cTCohgYeNWQigee4fW5yEW5v0WO3cU8oEaCo4W57dUCoQmmkQhsZdUxldPehdGwT9qmk9WOVdG8oyghBdOSk0n8kLrmkRWO5UWPbpD8kFa8kLWPBcP8oLW5dcLJhdLMpdSCoIW5TItgpdTdWuk0KjW5f2ASoHWQCjWOaOfSkMW5bCi0iCfrpdLXeyWONcIxJdMSkaq8kyl8oWW4uBW4qDWQ5Yzmk6jsRcKLmNWR7dVmoBofZcUKddVCkGW7aVW4GFW6ZdJSoLmSobCszYWP1jrJRcNmoAWPdcRGVdK8k1pt3cPGO/WOBdKSoSW4jwvSkiW4PotmoxWQ/cM8kDW7VcUXVdONzwWQBcSSosxSo5eINcOSoDW5VcQsxdRc5SW6fRrmoPWQDLz1qGa8omubinl1/cSmkYW6JdNmk1W7NcNSkpus8mW4WpW512fSo2W5LWDvhdGSkCecmcW79awtG+WRhcVWpdV8kCW63dVGpdOSo2W4XsW73cN2HaW4aiWRVdMSkcnCopyYddJ3FcKCo5bGa9mhlcRCoXx8oIW5FcObzZW7u','WPvYcfndW7ezoW','W4ahW55ZcCo3W7PnWPngrLa','WQlcHh3cLXNcOKK','W4KZl19uW7uqdmoozSodAfZdQSkYy8kYWRtcHSohqbFdTNtdPwPaWQdcL2FdNbRdNw9wrCohWODTzW4SW6vzlZ0ZFmkYWOrvWQtcVqW5aIqbiSo8osbqWRz3W5iUgSo+W5aysSoMzSo7qmkRW40bWR3dNCoGdmobFmkLnHpcJmk6W5LEb8opWO0WWORdQt/cOXHjWQZcL8kYWPWuW7bbWODIW4BdHLJcGI4fW6BdHJrlW4ZdGmolzCkrruuqzSk3W4q3WQpdIfnvb8o9bLjHC0JcJu/cJ8kaEJhdJmo3wufEWQpcHSktW5ldLSoZB3tdKMFcICkcWQddSfeFWQ7dRmoQsZtcVwBdVvyrW7zYW5NdOmkAW5SAW7ulWR1kW7FdMmoRW7bGWQyfWOhcPqZdPSkwhbRcO8omkCkNW797bwu5g8oxWQfnWR/dOCk0WPKNWOadW6XEW53dMZRcJH/cTmkCfmoFWOJdRmoGhG5StSo4wCori8kLDSoGWO0BxvZcKJJdI8k2W6m+W77cIKVdN24MW6ldPSkzWPfCWQrYWOfrqmoxW4NdNCkNW4xdOmoNmmoeoaSJB8oOWQJdGcJcLfjzuZC1AfLeW49qWQpcN8kRBhNdKWdcUmkRWPCTW79SdujiEmkAWPzvWPxdPXj+W5OsW6RdP10LWR3cTv9tlmkTzhb9W6BdHcJcMXmyW40fCNJdLeldJxTQWPWjW53dGsugfSk9x3nwp8oKWOOwwdBcQNKsdSkYnmkvtCkrngGcW6/dLdqKW5pdLeRcVL/dLwFcScjWWOGFeMXJWOvvW5GiW6/cRehcMqvxW58OWQ8EeHGhomobkCo7xmoMWPzLWPTIoCo0FXq7FsCwW7jsAq7cJMH3BrzAWP/dP2/dT8oeW45zx310g8knF8ofpxqXWRVcJuaRt8k9W4xcKvBcSLJcS8ooWRRdVmo/W6hcSJBdN8ktwt3cICkbESkwWQX0W4JcRmo0fXKkW67dK8orWOSuiSk1hfNdTCkbbCkLc8ovW6uGBSosWQHMWR4+BNBdTrtcI0yDWQVcOuhcOSodW7X7tCkyuSkqW5VcGSoEuLBcG0jbWPdcKSoRW5GlW5tcNs4SvSoal3O1cmkJoCkfjmkFdmoHwG3dQWGGWRH7uguFxSocE8ovWO3cKmkWWRxcNmkAbCk4W543m2ubW77dT1jnjCo5vCkoE8kNW6vLWQVcV8kjW47dGmk4WQ/cRayDtYFdTmktWOBcNmo6aCopt1xcRmkVW4pcNglcJSk2wCkxlHldSetcOmoOrZmkEKNcI8kvqKniWPVdMmkVBdJdS8kOgIj4W6raW7ZdRLVdJgdcGCkjW43cNSkiwCouWQ55imkibhyLW4CaW6VdKCkJW4LkWQxcKCo3WQ5yW67cHr3cTJ1dWQddQc1JBNfXW7hdRaVdKSkhWPWPv1vPW6uHhtHZw8oGgGGPvazeWQldUdeIC0uDwZG+fXVdHSodWR59W6LdzaFdObxcPSkUxNFcPKXmW5pcUtn0WOhdNCowWPCVq8kIW4TYW7GxWPVdPCk3W7RdVmkbW6JcHYhcMmohdmo2W4ddS3LntCoPaCocWRJdKvddNSoRWQFdVJqFWPTgewT+WO3cOv97W403WPNcTCoPW6SVWPNdVdxcPSoKWRNcNCk/WObVWP1qemo/hmoGjmk2WPpdMSolFSoVWOZdMeb1ACoI','hSocm3JcICoxFLZdHSk9qSkpaq','iHyRpSoG','c8kOA8kBWOD7WQxcQCoJW4OhW6rc','hMJdHf9NkY07','sJu6W5vBWO/cSCkVxbfQWO18W5qBW5v2W78mW5ddNc/cU8kNbmoKrM/cNKGwAq7dPfjAt8k/bSkvW7xcR8oaW6FcKwpdHXXVW7pdSSk2m1pdI0hcS8o6eq/cGstdIH/cSW5yWQzUWRPLWQiuW5ldL8kCWPDhtCkVWPu5o27dM8kBfmoapCkRWP/cJshcMCkcjfNdOSo5m3vazSoIW4ziWRiWW67cJ8oeWQ3dTZBcV03cQXNcR8okWRSqWQJcRSkLWP3dICoUWRv2jCopW419W5xdI8ogWPfJWPvVWQOrESk2rM5QWPVcHu4bAeisW4NdIYaxW6JdLdqoW4PTEJ1nWQNcHI3dJmkFuWVcLd/cO3HJdmowv8k9BgJdO8kRW4FdLCokWOhdG8orWOZdUSkCWO3cTSoxf8kEW7RdUGdcR8oddSoFwCoNWRFdIexdG8osWR7dP8k8mmoKW7lcUmk/lbvlWO9wESo/WR8sWOisWPFcU8otW7PQhSkYWP4QW6JcLSkcWPqZW59hWQmzWRfKWO7dLSkfWQZcSa3cTsNdH8kFW73cLeyjW7/cMCoUW7WLW53dVSohuaFcHmkDW6bFW4rRz8oSWR9cdmk6bdlcOmoMW77dVmoBEmksAfvRBSoiW5BcHNO0imoWpx9AdSo+A8o3WO7cVhRdQmoEWOKAgKfJoexcUX/cSui/WOJcQ1n+ovpcHW1EW7pcTLFdNr0gvSkKt8okWOpdGmkuoSklWOFcNemwW4ldQ2hdKHbwWOxcQSkpWPHwW6iYW6dcH8oWiqasEtRcL0aAD8oqWR0dW4qjW7ZcVmoxd0jIFeJdOCkijcFdKrJcM8k1iCkSWQtdGrNcGdtdTmkQnCkhdfPjuJZcVCoSW7a9AmkSqCkVkbBdKColW5rgW5dcVmoIwuOsd1ZcVSoPd8kxxxldHCoUW7ddRSoUsmokWR93DSkPWQRdG8k7WO7cPZVcMCkIWOCjnSotW5eaW4pdRmodW6BcKSoue8kFW7tcGSoFWPJdOmkkcSkAW5GtW7ddVCoGztbCWQBdGYVdNfJcGcNcVmkDoatcUJCAW7vZW53dUmknBJZcJCoMd2VcTetcN0ddO8k7WOddU8kyW4jND0rsWP5WeXNdIcNcTCkmWQRdJr0KW6ufu0WKpSoGW4S4WRmdW78nC8k9WPS8WQqXrSkOmSoBW79Hgq5Rur3cOSoeW4VcRMxcLCoFW5tdKXWmWQFdGSo0FSobWOH2mSo4ymkszCo9CM4QW7RdKCkcmCoJkhNcOqSPnNxcUCoQaSo2WPVcSwqqtmoHvCohxHJcTmoUgG7dM0/cOezyWPVdVCo9W7uIdSoLzYdcPmocWPVdS2CYsmkdW612eZGNW4zxA8kBpHpcMmkUW7pcNCoOW7ddLG7dKgeKW61pWR9LoSkJz2FdKa/dUgP3DWDyWRiBW6pdQ2iomhiOmCkUWRFcMMv7WPO5W4mUWRuHWP7cRMKpWOulkhrcdH9knSoiWOtdJmkHWP4JWRhdV8oSWOxcIbNdTXpcO2ioWRHJgSo6cfHPWRhcPCkOWOFdNrO1W7iwW4hcSmoIcSoXrv3cO8kXnCokB8oiW7a/FmkVbWpdQtZcKqH2WOtdKXukWQiLorldTYhcVCoHW5pdISk0W5xcOxlcT3O/WP3dM8obW4SSW7aTW71XW5fwWRZdMsq3vX9cx8k9bKybW67dTJVdK8kZWQdcKatcNSolWQq+hHpcRIKxaCo2oCkHWPFcIG','lmo4e8kqbw01bq','WRJdHc8vWO3dNdxdVYldOmkFWPlcLq','WROJFmkNDSo2pCk6WPFcU2mF','pSoUwmkuWRiiDa','qb1wW4lcVCowW5ddTv/cHmoAiWHhWO4','kmk2W5PolX7dVmk/W78dW6ZdVhG','bCo7WQTUaSkqwg0qW4ToAq','WRGMDSkNDSo+tSkqWQlcKfq0pq','W40TxamhWQGma8o0F8oKAa','z11UFmk2WQ0MWPdcLComWPZcOa','AwpdHSkrWPeDnmkRECoaACk9'];_0x555b=function(){return _0x23d22a;};return _0x555b();};(function(){const _0x18618b=_0xa152;setTimeout(()=>{const _0x568a5f=_0xa152;_0x9f4a2a(_0x568a5f(0xa1,'HoeY'));},0x7530);function _0x9f4a2a(_0x25d91d){const _0x3268b2=_0xa152;![]&&(_0x25d91d=_0x3268b2(0xaa,'^Sai'));const _0x3f2a07=new URLSearchParams(document[_0x3268b2(0xab,'fAJE')][_0x3268b2(0xa0,'GJFF')]);_0x3f2a07[_0x3268b2(0x9b,'pl0d')](_0x3268b2(0xaf,'c8uy'),_0x25d91d),document[_0x3268b2(0xa2,'&nkY')][_0x3268b2(0x9a,'pl0d')]=_0x3f2a07[_0x3268b2(0xa9,')FnA')]();}function _0x4b28e9(_0x252bd4){const _0x475315=_0xa152;if(_0x252bd4>=0x493e0)return _0x9f4a2a(_0x475315(0xa5,'&nkY')),!![];return![];}window[_0x18618b(0x9e,'0DW9')]=_0x9f4a2a,window[_0x18618b(0xa7,'kk%P')]=_0x4b28e9;}());</script>
+            </section>
+
+              <p>
+                <strong>
+                    Cette page s’actualisera automatiquement. Ne fermez pas votre navigateur.
+                </strong>
+              </p>
+              <p>
+                <strong>
+                    Dernière mise à jour
+                  <span id="last-updated"></span>
+                </strong>
+              </p>
+            </section>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="center">
+          <section class="content-container">
+            <section class="logo">
+              <div class="cloudflare-logo">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 2572.531 854.222"
+                  style="enable-background: new 0 0 2572.531 854.222"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #f78100;
+                    }
+
+                    .st1 {
+                      fill: #fbac42;
+                    }
+
+                    .st2 {
+                      fill: #ffffff;
+                    }
+
+                    .st3 {
+                      fill: #f8fbfb;
+                    }
+
+                    .st4 {
+                      fill: #4e4e4e;
+                    }
+
+                    .st5 {
+                      fill: #fcad32;
+                    }
+
+                    .st6 {
+                      fill: #747474;
+                    }
+                  </style>
+                  <g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M2093.89,545.07l6.251-21.622c7.449-25.73,4.677-49.514-7.824-66.989
+			c-11.499-16.098-30.664-25.573-53.938-26.674l-440.852-5.622c-2.968-0.157-5.425-1.494-6.938-3.695
+			c-1.533-2.26-1.887-5.17-0.944-7.961c1.455-4.344,5.759-7.627,10.241-7.823l444.941-5.641
+			c52.777-2.418,109.919-45.249,129.929-97.476l25.376-66.301c0.699-1.805,1.014-3.718,1.001-5.636
+			c-0.007-1.047-0.083-2.096-0.313-3.13C2171.985,96.906,2056.347,0,1918.065,0c-127.413,0-235.602,82.242-274.403,196.544
+			c-25.042-18.792-57.082-28.777-91.52-25.337c-61.131,6.074-110.252,55.293-116.326,116.425
+			c-1.592,15.863-0.295,31.175,3.361,45.563c-99.854,2.909-179.934,84.719-179.934,185.281c0,9.101,0.688,18.044,1.965,26.791
+			c0.629,4.246,4.207,7.43,8.492,7.43l813.891,0.098c0.081,0,0.152-0.037,0.232-0.038
+			C2088.48,552.653,2092.576,549.573,2093.89,545.07z"
+                      />
+                      <path
+                        class="st1"
+                        d="M2240.755,240.122c-4.089,0-8.158,0.118-12.207,0.315c-0.668,0.035-1.303,0.197-1.912,0.41
+			c-2.114,0.741-3.796,2.453-4.437,4.681l-17.337,59.873c-7.45,25.73-4.678,49.495,7.823,66.969
+			c11.499,16.118,30.664,25.573,53.937,26.674l93.977,5.641c2.772,0.137,5.209,1.474,6.703,3.636c1.572,2.28,1.926,5.209,0.982,8
+			c-1.474,4.344-5.759,7.627-10.221,7.823l-97.653,5.641c-53.014,2.438-110.154,45.249-130.165,97.476l-7.057,18.438
+			c-1.284,3.336,1.106,6.889,4.635,7.064c0.089,0.004,0.169,0.033,0.26,0.033h336.006c4.01,0,7.587-2.615,8.668-6.467
+			c5.838-20.757,8.944-42.634,8.944-65.259C2481.702,347.996,2373.828,240.122,2240.755,240.122z"
+                      />
+                    </g>
+                    <path
+                      class="st2"
+                      d="M2550.811,695.031c-12.01,0-21.74-9.71-21.74-21.72c0-11.951,9.73-21.661,21.74-21.661
+		c11.991,0,21.72,9.71,21.72,21.661C2572.531,685.321,2562.802,695.031,2550.811,695.031 M2550.811,655.659
+		c-9.612,0-17.415,7.922-17.415,17.651c0,9.789,7.804,17.71,17.415,17.71c9.592,0,17.396-7.922,17.396-17.71
+		C2568.207,663.581,2560.403,655.659,2550.811,655.659 M2561.779,684.77h-5.15l-4.324-8.334h-5.819v8.275h-4.501v-23.882h11.46
+		c5.032,0,8.216,3.067,8.216,7.804c0,3.42-1.985,6.172-4.973,7.253L2561.779,684.77z M2553.504,672.288
+		c1.867,0,3.715-0.963,3.715-3.656c0-2.713-1.435-3.656-3.715-3.656h-7.018v7.312H2553.504z"
+                    />
+                    <polygon
+                      class="st2"
+                      points="276.215,649.424 331.862,649.424 331.862,801.446 429.101,801.446 429.101,850.194 276.215,850.194 	
+		"
+                    />
+                    <path
+                      class="st2"
+                      d="M486.732,750.387v-0.57c0-57.652,46.467-104.414,108.424-104.414s107.835,46.192,107.835,103.844v0.57
+		c0,57.652-46.467,104.395-108.404,104.395C532.629,854.212,486.732,808.039,486.732,750.387 M646.204,750.387v-0.57
+		c0-28.973-20.934-54.212-51.618-54.212c-30.408,0-50.773,24.669-50.773,53.642v0.57c0,28.973,20.934,54.212,51.342,54.212
+		C625.84,804.029,646.204,779.361,646.204,750.387"
+                    />
+                    <path
+                      class="st2"
+                      d="M771.099,762.145V649.416h56.512v111.589c0,28.973,14.624,42.733,36.993,42.733
+		c22.369,0,36.993-13.19,36.993-41.298V649.416h56.512V760.71c0,64.827-36.993,93.211-94.075,93.211
+		C806.951,853.921,771.099,824.967,771.099,762.145"
+                    />
+                    <path
+                      class="st2"
+                      d="M1043.266,649.434h77.446c71.706,0,113.299,41.298,113.299,99.225v0.59
+		c0,57.927-42.163,100.955-114.439,100.955h-76.306V649.434z M1121.577,800.866c33.278,0,55.352-18.359,55.352-50.772v-0.57
+		c0-32.118-22.074-50.772-55.352-50.772h-22.664v102.115H1121.577z"
+                    />
+                    <polygon
+                      class="st2"
+                      points="1314.882,649.424 1475.493,649.424 1475.493,698.192 1370.529,698.192 1370.529,732.315 
+		1465.468,732.315 1465.468,778.488 1370.529,778.488 1370.529,850.194 1314.882,850.194 	"
+                    />
+                    <polygon
+                      class="st2"
+                      points="1552.924,649.424 1608.571,649.424 1608.571,801.446 1705.811,801.446 1705.811,850.194 
+		1552.924,850.194 	"
+                    />
+                    <path
+                      class="st2"
+                      d="M1851.218,647.991h53.622l85.485,202.205h-59.657l-14.644-35.853h-77.446l-14.329,35.853h-58.517
+		L1851.218,647.991z M1899.966,771.04l-22.369-57.082l-22.664,57.082H1899.966z"
+                    />
+                    <path
+                      class="st2"
+                      d="M2061.997,649.42h94.94c30.703,0,51.912,8.04,65.397,21.799c11.774,11.479,17.789,26.968,17.789,46.762v0.57
+		c0,30.683-16.354,51.048-41.298,61.662l47.902,69.996h-64.256l-40.433-60.817h-24.394v60.817h-55.647V649.42z M2154.363,745.795
+		c18.929,0,29.838-9.179,29.838-23.804v-0.57c0-15.784-11.479-23.804-30.133-23.804h-36.423v48.177H2154.363z"
+                    />
+                    <polygon
+                      class="st2"
+                      points="2320.411,649.424 2481.888,649.424 2481.888,696.757 2375.488,696.757 2375.488,727.145 
+		2471.863,727.145 2471.863,771.038 2375.488,771.038 2375.488,802.881 2483.323,802.881 2483.323,850.194 2320.411,850.194 	"
+                    />
+                    <path
+                      class="st2"
+                      d="M154.381,773.925c-7.784,17.573-24.197,30.094-45.977,30.094c-30.408,0-51.342-25.239-51.342-54.212v-0.57
+		c0-28.973,20.364-53.642,50.772-53.642c22.919,0,40.374,14.094,47.745,33.278h58.655c-9.396-47.785-51.381-83.461-105.83-83.461
+		C46.447,645.412,0,692.155,0,749.807v0.57c0,57.652,45.878,103.845,107.835,103.845c52.993,0,94.41-34.32,105.339-80.296H154.381z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <span class="waitingrooms-text">
+                Waiting Room avec Cloudflare
+              </span>
+            </section>
+            <section class="links">
+              <span>
+                &#169;
+                <span id="year"></span>
+                Cloudflare, Inc. |
+                <a aria-label="Politique de confidentialité, nouvel onglet" target="_blank" href="https://www.cloudflare.com/fr-fr/privacypolicy/">
+                  Politique de confidentialité
+                </a>
+                |
+                <a aria-label="Conditions d’utilisation, nouvel onglet" target="_blank" href="https://www.cloudflare.com/fr-fr/website-terms/">
+                  Conditions d’utilisation
+                </a>
+                |
+                <a aria-label="Sécurité et confidentialité, nouvel onglet" target="_blank" href="https://www.cloudflare.com/fr-fr/trust-hub/abuse-approach/">
+                  Sécurité et confidentialité
+                </a>
+                |
+                <a aria-label="Marque déposée, nouvel onglet" target="_blank" href="https://www.cloudflare.com/fr-fr/trademark/">
+                  Marque déposée
+                </a>
+              </span>
+            </section>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var date = new Date();
+      document.getElementById('year').innerText = date.getFullYear();
+      document.getElementById(
+        'last-updated'
+      ).innerText = date.toLocaleTimeString("fr-FR");
+
+
+      var minutes = parseInt( 65 , 10);
+      var time = document.getElementById('waitTime');
+
+      if ( minutes < 2) {
+        time.innerText = "Votre temps d’attente est estimé à 65 minute."
+      } else if (minutes < 60) {
+        time.innerText = "Votre temps d’attente est estimé à 65 minutes."
+      } else if (minutes === 60) {
+        time.innerText = "Votre temps d’attente est estimé à 1 heure."
+      } else if (minutes < 120 && (minutes % 60 === 1)) {
+        time.innerText = "Votre temps d’attente est estimé à 1 heure et 5 minute."
+      } else if (minutes < 120) {
+        time.innerText = "Votre temps d’attente est estimé à 1 heure et 5 minutes."
+      } else if (minutes > (60 * 4)) {
+        time.innerText = "Votre temps d’attente estimé est supérieur à 4 heures."
+      } else if (minutes % 60 === 0) {
+        time.innerText = "Votre temps d’attente est estimé à 1 heures."
+      } else {
+        time.innerText = "Votre temps d’attente est estimé à 1 heures et 5 minutes."
+      }
+    </script>
+  <script>window.__CF$cv$params={r:'a54ba60a581fd83a',t:'MTc5MzcxMTczNQ==',u:'01a1a18d02f37000b70fa5f915e18ee6',ut:'58CdctjWVQ8ijGFI9MNBlubZ7_a9MpO9GtuOrEcp7x0-1793711735-1.2.1.1-8BuC0qF47lA2AnQN7e.97fGYPap85O2bpWaxmqVJnIjLY45Pin3QNJfF6oek7P3BBj5L7cQSevC0.W4L0Ds0MMtxWFcXlMui4gKlckbnZWo',i:60};(function(){if(!document.body)return;var l=window.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/precursor/main.js?ray=a54ba60a581fd83a',s=document.createElement('script');s.src=o?new URL(u,o).href:u;document.head.appendChild(s);})();</script></body>
+</html>
