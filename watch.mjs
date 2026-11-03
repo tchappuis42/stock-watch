@@ -71,6 +71,17 @@ async function get(url, accept) {
   return res;
 }
 
+// JSON answer; a shop sometimes sends an HTML error or maintenance page instead (with status 200):
+// treat it like a page that did not load (try again next pass), not as a bug that fails the run.
+async function getJson(url) {
+  const body = await (await get(url, 'application/json')).text();
+  try {
+    return JSON.parse(body);
+  } catch {
+    throw new Skip(`réponse illisible (pas du JSON : ${body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60) || 'vide'})`);
+  }
+}
+
 const decode = (s) =>
   s
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
@@ -145,7 +156,7 @@ async function watchProduct(item) {
 async function listPrestaShop(base, path) {
   const url = new URL(path, base);
   url.searchParams.set('resultsPerPage', '100');
-  const j = await (await get(url, 'application/json')).json();
+  const j = await getJson(url);
   return (j.products ?? []).map((p) => ({
     id: String(p.id_product),
     name: decode(p.name),
@@ -166,7 +177,7 @@ const wooLanguage = (p, name) =>
 
 async function listWooCommerce(base, path) {
   const url = new URL(path, base);
-  const j = await (await get(url, 'application/json')).json();
+  const j = await getJson(url);
   return j.map((p) => {
     const name = decode(p.name);
     const minor = p.prices?.currency_minor_unit ?? 2;
@@ -190,7 +201,7 @@ async function listWooCommerce(base, path) {
 // Also reads the shop's search suggestions (/search/suggest.json?q=…, 10 results per query): for shops
 // whose catalogue is mostly thousands of single cards, a few targeted queries beat reading every page.
 async function listShopify(base, path) {
-  const j = await (await get(new URL(path, base), 'application/json')).json();
+  const j = await getJson(new URL(path, base));
   return (j.products ?? j.resources?.results?.products ?? []).map((p) => {
     const name = decode(p.title);
     const orderable = p.available ?? p.variants?.some((v) => v.available) ?? false;
@@ -242,7 +253,7 @@ async function shopwareVariantUrl(base, productUrl, option) {
   if (!m) return between(h, /<link rel="canonical" href="([^"]+)"/) ?? productUrl; // no variants: the product itself
   const switchUrl = between(h, /&quot;url&quot;:&quot;(https?:[^&]*?\\\/switch)&quot;/)?.replace(/\\\//g, '/');
   if (!switchUrl) throw new Skip('variante introuvable (format de page inconnu)');
-  const j = await (await get(`${switchUrl}?options=${encodeURIComponent(JSON.stringify({ [m[1]]: m[2] }))}`, 'application/json')).json();
+  const j = await getJson(`${switchUrl}?options=${encodeURIComponent(JSON.stringify({ [m[1]]: m[2] }))}`);
   return j.url;
 }
 
