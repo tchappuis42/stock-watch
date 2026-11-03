@@ -1,0 +1,21 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          set +e
+          jq '.searches |= map(select(.shop=="playin"))' watch.json > w.json && mv w.json watch.json
+          node watch.mjs > out.txt 2>&1
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          curl -s -A "$UA" "https://www.play-in.com/fr/produit/659645/x" | sed 's/\\"/"/g' | grep -oE '"(storeStockState|warehouseStockState|shortName|releasedAt|preorder[A-Za-z]*|isPreorder|sellPrice|stockState|availability)":[^,}]{0,60}' | head -60 >> out.txt
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out11; git rm -rfq --cached . ; git add out.txt; git commit -qm diag; git push -qf origin diag-out11; exit 0
