@@ -417,6 +417,15 @@ async function hiddenCsCart(s, seen) {
 // `pages` = product ids. `store` = the shop to watch (e.g. "Annecy"): orderable = in stock there or online.
 async function listPlayin(base, id, s) {
   const raw = await getHtml(new URL(`/fr/produit/${id}/x`, base));
+  // Play-in turns on a Cloudflare waiting room ("file d'attente virtuelle") when traffic spikes, usually
+  // because sales or pre-orders just opened. The stock cannot be read then (and the queue is not skipped):
+  // say it once, it is the signal to open the site by hand. Cleared as soon as a page reads normally again.
+  const queueKey = `waitingroom:${s.name}`;
+  if (/Waiting Room|file d.attente virtuelle/i.test(raw) && !/"productStores"/.test(raw)) {
+    if (!state[queueKey] && (await push(`🚦 File d’attente active — ${s.name}`, 'Play-in a activé sa file d’attente (trafic élevé) : ventes ou précommandes probablement ouvertes. Ouvre le site et garde l’onglet ouvert.', new URL(`/fr/produit/${id}/x`, base).href, true))) state[queueKey] = new Date().toISOString();
+    throw new Skip('file d’attente Play-in active');
+  }
+  delete state[queueKey];
   const h = raw.replace(/\\"/g, '"');
   const at = h.indexOf('"productStores"');
   if (at < 0) throw new Skip('format de page inconnu');
