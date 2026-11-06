@@ -1,0 +1,5 @@
+1 200 293209 https://www.draftarena.ch/shop
+2 200 192070 https://www.draftarena.ch/shop/category/precommandes-9
+3 200 177708 https://www.draftarena.ch/shop?search=30
+4 200 170570 https://www.draftarena.ch/shop?search=pokemon&order=create_date+desc
+5 200 67647 https://www.draftarena.ch/shop?search=ultra+premium
