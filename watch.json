@@ -684,6 +684,64 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "Draft Arena — Pokémon 30 ans FR",
+      "shop": "odoo",
+      "base": "https://www.draftarena.ch",
+      "link": "https://www.draftarena.ch/shop/category/precommandes-9",
+      "pages": [
+        "/shop/category/precommandes-9",
+        "/shop/category/jeux-de-cartes-tcg-pokemon-24?order=create_date+desc",
+        "/shop/category/jeux-de-cartes-tcg-pokemon-24/page/2?order=create_date+desc",
+        "/shop?search=30",
+        "/shop?search=ultra+premium"
+      ],
+      "pauseMs": 2000,
+      "orderableTag": "OLjA",
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
