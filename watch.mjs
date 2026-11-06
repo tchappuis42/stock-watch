@@ -596,9 +596,11 @@ async function watchSearch(s) {
   const failed = new Set();
   const freshSingles = fresh.filter((p) => p.single);
   const alone = freshSingles.length > 3 ? fresh.filter((p) => !p.single) : fresh;
-  for (const p of alone) if (!(await push(`🆕 ${s.name}${p.orderable ? ' — COMMANDABLE' : ''}`, describe(p, s.match.language), p.url, p.orderable))) failed.add(p.id);
+  // s.orderableTag: word put in front of this shop's "commandable" alerts (e.g. a name, to spot them at a glance).
+  const tag = s.orderableTag ? `${s.orderableTag} ` : '';
+  for (const p of alone) if (!(await push(`${p.orderable ? tag : ''}🆕 ${s.name}${p.orderable ? ' — COMMANDABLE' : ''}`, describe(p, s.match.language), p.url, p.orderable))) failed.add(p.id);
   if (freshSingles.length > 3 && !(await push(`🆕 ${s.name} — ${freshSingles.length} nouvelles cartes à l’unité`, summary(freshSingles.map(line)), s.link))) for (const p of freshSingles) failed.add(p.id);
-  for (const p of nowOrderable) if (!(await push(`🚨 COMMANDABLE — ${p.name}`, `${s.name}\n${describe(p, s.match.language)}`, p.url, true))) failed.add(p.id);
+  for (const p of nowOrderable) if (!(await push(`${tag}🚨 COMMANDABLE — ${p.name}`, `${s.name}\n${describe(p, s.match.language)}`, p.url, true))) failed.add(p.id);
   for (const p of nowVisible) if (!(await push(`👀 En ligne — ${p.name}`, `${s.name}\n${describe(p, s.match.language)}`, p.url))) failed.add(p.id);
 
   const all = summary(hits.map(line));

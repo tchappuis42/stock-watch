@@ -78,7 +78,8 @@
           "lego"
         ],
         "language": "FR"
-      }
+      },
+      "orderableTag": "OLjA"
     },
     {
       "name": "Red Line — Pokémon 30 ans FR",
@@ -459,70 +460,6 @@
           "one piece",
           "magic",
           "yu-gi-oh"
-        ],
-        "language": "FR"
-      }
-    },
-    {
-      "name": "Play-in Annecy — Pokémon 30 ans FR",
-      "shop": "playin",
-      "base": "https://www.play-in.com",
-      "link": "https://www.play-in.com/fr/recherche?q=pokemon%2030%20ans",
-      "pages": [
-        "659644",
-        "659645",
-        "659641",
-        "659642",
-        "659643",
-        "659646",
-        "659647",
-        "659418",
-        "659371",
-        "659376"
-      ],
-      "store": "Annecy",
-      "pauseMs": 2000,
-      "match": {
-        "anyOf": [
-          [
-            [
-              "pokemon"
-            ],
-            [
-              "30e",
-              "30eme",
-              "30 ans",
-              "30ans",
-              "30th",
-              "30a"
-            ]
-          ],
-          [
-            [
-              "pokemon"
-            ],
-            [
-              "upc",
-              "ultra premium",
-              "ultra-premium"
-            ],
-            [
-              "soiree",
-              "journee",
-              "nuit",
-              "night",
-              "day",
-              "noctali",
-              "mentali",
-              "umbreon",
-              "espeon"
-            ]
-          ]
-        ],
-        "exclude": [
-          "tournoi",
-          "ligue",
-          "avant-premiere"
         ],
         "language": "FR"
       }
