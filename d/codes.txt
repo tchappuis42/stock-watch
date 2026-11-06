@@ -1,0 +1,5 @@
+1 200 36040 text/html; charset=utf-8 https://www.draftarena.ch/
+2 404 25843 text/html;charset=utf-8 https://www.draftarena.ch/products.json?limit=250
+3 404 25888 text/html;charset=utf-8 https://www.draftarena.ch/wp-json/wc/store/v1/products?search=30&per_page=100
+4 404 25831 text/html;charset=utf-8 https://www.draftarena.ch/recherche?controller=search&s=30
+5 404 25822 text/html;charset=utf-8 https://www.draftarena.ch/search?q=30
