@@ -1,0 +1,21 @@
+HTTP/2 403 
+date: Sat, 07 Nov 2026 14:53:17 GMT
+content-type: text/html; charset=UTF-8
+content-length: 573760
+accept-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+cf-mitigated: challenge
+x-frame-options: SAMEORIGIN
+server: cloudflare
+critical-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+cross-origin-embedder-policy: require-corp
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+permissions-policy: accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*
+referrer-policy: same-origin
+server-timing: chlray;desc="a56d2aa8690fad12"
+x-content-type-options: nosniff
+strict-transport-security: max-age=2592000
+set-cookie: __cf_bm=Niul1OEH5RbsU4y6BF6qDIUfcp1foAVUdFzf7JxNBug-1794063197.503858-1.0.1.1-gu59gPhw8dmXfsbFHJ.FFnPEHb_IXhG78I1A4BpjlCMdvlizfn71W4Cge_sXZZR1jdB0yPM5a3lCxBei7fv4YH0NN1xZzBHpWcO2Wx6Hge_52TC_SnMpnJ9X6pNuy6hl; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=carrefour.fr; Expires=Sat, 07 Nov 2026 15:23:17 GMT
+cf-ray: a56d2aa8690fad12-MSP
+
