@@ -743,6 +743,60 @@
         "language": "FR"
       },
       "defaultLanguage": "FR"
+    },
+    {
+      "name": "Le Petit Caribou — Pokémon 30 ans FR",
+      "shop": "woocommerce",
+      "base": "https://lepetitcaribou.ch",
+      "link": "https://lepetitcaribou.ch/categorie-produit/jeux-de-cartes-a-collectionner/",
+      "pages": [
+        "/wp-json/wc/store/v1/products?search=pokemon&per_page=100&orderby=date&order=desc",
+        "/wp-json/wc/store/v1/products?search=30th&per_page=100"
+      ],
+      "pauseMs": 2000,
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
