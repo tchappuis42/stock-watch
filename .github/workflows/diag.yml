@@ -1,0 +1,20 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set +e
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          mkdir d; n=0
+          for u in "/eshop/fr/recherche?controller=search&s=ultra+premium" "/eshop/fr/recherche?controller=search&s=30eme+anniversaire" "/eshop/fr/nouveautes-figurines-geneve/24553-figurine-pokemon-company-international-precommande-fr-pokemon-celebration-ultra-premium-collection-journee-30eme-anniversaire-ve.html"; do
+            n=$((n+1)); curl -s -L -m 30 -A "$UA" -H 'Accept: application/json' -H 'X-Requested-With: XMLHttpRequest' -w "$n %{http_code} %{size_download} %{content_type}\n" -o d/$n.json "https://www.characterstation.com$u" >> d/codes.txt; sleep 2
+          done
+          curl -s -L -m 30 -A "$UA" -w "html %{http_code} %{size_download}\n" -o d/p.html "https://www.characterstation.com/eshop/fr/nouveautes-figurines-geneve/24553-figurine-pokemon-company-international-precommande-fr-pokemon-celebration-ultra-premium-collection-journee-30eme-anniversaire-ve.html" >> d/codes.txt
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out19; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out19; exit 0
