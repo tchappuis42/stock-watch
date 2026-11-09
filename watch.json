@@ -797,6 +797,61 @@
         ],
         "language": "FR"
       }
+    },
+    {
+      "name": "Character Station — Pokémon 30 ans FR",
+      "shop": "prestashop",
+      "base": "https://www.characterstation.com",
+      "link": "https://www.characterstation.com/eshop/fr/recherche?controller=search&s=pokemon+30%C3%A8me+anniversaire",
+      "pages": [
+        "/eshop/fr/recherche?controller=search&s=30eme+anniversaire&order=product.date_add.desc",
+        "/eshop/fr/recherche?controller=search&s=pokemon+celebration&order=product.date_add.desc",
+        "/eshop/fr/recherche?controller=search&s=ultra+premium&order=product.date_add.desc"
+      ],
+      "pauseMs": 2000,
+      "match": {
+        "anyOf": [
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "30e",
+              "30eme",
+              "30 ans",
+              "30ans",
+              "30th",
+              "30a"
+            ]
+          ],
+          [
+            [
+              "pokemon"
+            ],
+            [
+              "upc",
+              "ultra premium",
+              "ultra-premium"
+            ],
+            [
+              "soiree",
+              "journee",
+              "nuit",
+              "night",
+              "day",
+              "noctali",
+              "mentali",
+              "umbreon",
+              "espeon"
+            ]
+          ]
+        ],
+        "exclude": [
+          "tournoi",
+          "ligue"
+        ],
+        "language": "FR"
+      }
     }
   ]
 }
