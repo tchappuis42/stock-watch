@@ -12,10 +12,7 @@ jobs:
           set +e
           mkdir d
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          for u in pokemon-tech-sticker-collection-30eme-anniversaire pokemon-binder-collection-30eme-anniversaire; do
-            curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' "https://www.400coups.ch/$u.html" > d/$u.html; sleep 6
-          done
-          curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' "https://www.400coups.ch/index.php?dispatch=products.search&q=pokemon+30&search_performed=Y&items_per_page=96&sort_by=timestamp&sort_order=desc" > d/search.html; sleep 6
+          sleep 20
           curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' "https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc" > d/cat.html
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out23; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out23; exit 0
+          git checkout -q --orphan diag-out24; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out24; exit 0
