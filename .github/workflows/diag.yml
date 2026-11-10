@@ -8,15 +8,14 @@ jobs:
     timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - run: |
           set +e
           mkdir d
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          for t in 1 2 3 4; do
-            sleep 30
-            code=$(curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' -o d/cat.html -w "%{http_code}" "https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc")
-            echo "try $t $code" >> d/log.txt
-            [ "$code" = 200 ] && break
-          done
+          jq '.searches |= map(select(.name|startswith("400")))' watch.json > w.json && mv w.json watch.json
+          echo '{}' > state.json
+          REPORT=1 node watch.mjs > d/full.txt 2>&1
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out25; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out25; exit 0
+          git checkout -q --orphan diag-out26; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out26; exit 0
