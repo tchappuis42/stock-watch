@@ -1,0 +1,5 @@
+2026-11-10T09:46:36.378Z ⏳ 429 sur www.400coups.ch — nouvel essai dans 15 s
+2026-11-10T09:46:51.643Z ⏭ 400 Coups — Pokémon 30 ans FR /index.php?dispatch=products.search&q=pokemon+30&search_performed=Y&items_per_page=96&sort_by=timestamp&sort_order=desc: HTTP 429 (trop de requêtes)
+2026-11-10T09:46:51.643Z ⏭ 400 Coups — Pokémon 30 ans FR: aucune page lue — on réessaie au prochain passage
+2026-11-10T09:46:51.644Z 🔔 Test — 400 Coups — Pokémon 30 ans FR — Page non lue : aucune page lue
+2026-11-10T09:46:51.644Z ⚠ NTFY_TOPIC not set — no push
