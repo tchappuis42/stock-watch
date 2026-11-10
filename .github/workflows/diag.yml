@@ -5,14 +5,18 @@ permissions:
 jobs:
   diag:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
       - run: |
           set +e
           mkdir d
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
-          sleep 20
-          curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' "https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc" > d/cat.html
+          for t in 1 2 3 4; do
+            sleep 30
+            code=$(curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' -o d/cat.html -w "%{http_code}" "https://www.400coups.ch/jeux-de-cartes/pokemon/?items_per_page=96&sort_by=timestamp&sort_order=desc")
+            echo "try $t $code" >> d/log.txt
+            [ "$code" = 200 ] && break
+          done
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out24; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out24; exit 0
+          git checkout -q --orphan diag-out25; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out25; exit 0
