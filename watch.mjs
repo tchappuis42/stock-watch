@@ -542,16 +542,48 @@ const describe = (p, language) =>
 // Several lines in one push: the first ones, then "+ N autres".
 const summary = (lines, max = 8) => lines.slice(0, max).join('\n') + (lines.length > max ? `\n+ ${lines.length - max} autres` : '');
 
+// Lists that disagree on a product: its own page decides (CS-Cart: real cart button or not). Only the
+// matching products are opened, so it costs a request or two. If that page cannot be read, the product
+// keeps what it was last pass, so it neither raises an alert nor looks sold out because of one list.
+// Other shops: a product shown orderable in any list counts as orderable (already chosen above).
+async function settleConflicts(s, seen, conflicts) {
+  const last = state[`search:${s.name}`]?.products ?? {};
+  for (const id of conflicts) {
+    const p = seen.get(id);
+    if (!matches(p, s.match)) continue;
+    if (s.shop !== 'cscart') continue;
+    try {
+      await pause(s.pauseMs ?? 2000);
+      const r = readCsCart(await (await get(p.url, 'text/html')).text());
+      if (!r) throw new Skip('format de page inconnu');
+      seen.set(id, { ...p, orderable: r.orderable, status: `${r.label.replace(/^[\d.]+ CHF — /, '')} (fiche produit)` });
+      log(`🔍 ${s.name}: listes en désaccord pour « ${p.name} » — fiche produit : ${r.orderable ? 'commandable' : 'pas commandable'}`);
+    } catch (e) {
+      if (!(e instanceof Skip)) throw e;
+      const before = Boolean(last[id]?.orderable);
+      seen.set(id, { ...p, orderable: before, status: `${p.status} (listes en désaccord, fiche non lue)` });
+      log(`⏭ ${s.name} fiche de « ${p.name} »: ${e.message} — on garde l’état précédent`);
+    }
+  }
+}
+
 async function watchSearch(s) {
   const seen = new Map();
   // unread: products whose own page failed this pass (Shopware), left as they were.
   // boxes: products listed before Shopware's own filtering (its `seen` only holds the matching ones).
   const ctx = { unread: new Set(), boxes: 0 };
+  const conflicts = new Set();
   let read = 0;
   for (const [i, path] of s.pages.entries()) {
     if (i && s.pauseMs) await pause(s.pauseMs); // gentle with touchy shops (400 Coups)
     try {
-      for (const p of await LISTERS[s.shop ?? 'prestashop'](s.base, path, s, ctx)) seen.set(p.id, p);
+      for (const p of await LISTERS[s.shop ?? 'prestashop'](s.base, path, s, ctx)) {
+        // The same product can be in several lists that disagree (400 Coups: the search shows the cart
+        // button, the category not). Remember both answers; the product page settles it below.
+        const was = seen.get(p.id);
+        if (was && was.orderable !== p.orderable) conflicts.add(p.id);
+        seen.set(p.id, was && was.orderable && !p.orderable ? was : p);
+      }
       read++;
     } catch (e) {
       if (!(e instanceof Skip)) throw e;
@@ -561,6 +593,7 @@ async function watchSearch(s) {
   }
   if (!read) throw new Skip('aucune page lue');
   let complete = read === s.pages.length; // every list read: a product missing from them is really gone
+  await settleConflicts(s, seen, conflicts);
   if (s.shop === 'cscart' && (s.hidden?.length || s.probe)) {
     try {
       for (const p of await hiddenCsCart(s, seen)) seen.set(p.id, p);
