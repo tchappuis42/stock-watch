@@ -1,0 +1,27 @@
+name: diag
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: state-${{ github.run_id }}
+          restore-keys: state-
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          set +e
+          mkdir d
+          jq -c 'to_entries[]|select(.key|test("400"))' state.json > d/state400.txt
+          ls -la state.json >> d/info.txt
+          jq '.searches |= map(select(.name|startswith("400")))' watch.json > w.json && mv w.json watch.json
+          REPORT=1 node watch.mjs > d/out.txt 2>&1
+          git config user.name diag; git config user.email diag@users.noreply.github.com
+          git checkout -q --orphan diag-out21; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out21; exit 0
