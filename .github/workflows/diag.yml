@@ -19,9 +19,12 @@ jobs:
       - run: |
           set +e
           mkdir d
-          jq -c 'to_entries[]|select(.key|test("400"))' state.json > d/state400.txt
-          ls -la state.json >> d/info.txt
-          jq '.searches |= map(select(.name|startswith("400")))' watch.json > w.json && mv w.json watch.json
-          REPORT=1 node watch.mjs > d/out.txt 2>&1
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0 Safari/537.36'
+          for u in pokemon-coffret-ultra-premium-journee-30eme-anniversaire pokemon-coffret-ultra-premium-nuit-30eme-anniversaire; do
+            curl -s -A "$UA" -H 'Accept-Language: fr-CH,fr;q=0.9' "https://www.400coups.ch/$u.html" > d/$u.html
+            echo "== $u $(wc -c < d/$u.html)" >> d/out.txt
+            grep -oiE 'id="button_cart_[0-9]+"[^>]*|data-ca-external-click-id[^>]*|ty-qty-in-stock[^<]{0,80}|ty-qty-out-of-stock[^<]{0,80}|Commande bient[^<]{0,60}|En stock[^<]{0,40}|Rupture[^<]{0,40}|Ajouter au panier[^<]{0,20}|Précommande[^<]{0,40}|Disponible[^<]{0,60}' d/$u.html | sort | uniq -c | head -20 >> d/out.txt
+            sleep 6
+          done
           git config user.name diag; git config user.email diag@users.noreply.github.com
-          git checkout -q --orphan diag-out21; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out21; exit 0
+          git checkout -q --orphan diag-out22; git rm -rfq --cached . ; git add d; git commit -qm diag; git push -qf origin diag-out22; exit 0
