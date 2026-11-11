@@ -1,0 +1,47 @@
+name: diag2
+
+on:
+  # Main trigger: cron-job.org calls the GitHub API every 10 min (workflow_dispatch with report=false).
+  # GitHub's own schedule is only a backup: it often skips runs, so it is kept hourly.
+  workflow_dispatch:
+    inputs:
+      report:
+        description: 'Toujours envoyer l’état actuel (test)'
+        type: boolean
+        default: true
+
+# A new pass cancels the previous one if it is still there. A pass lasts at most a few minutes, so this
+# normally only hits a run stuck in GitHub's queue (it once sat "queued" for 6 h and held back every pass).
+# Alerts already sent are kept: state.json is written after each shop and saved even when cancelled.
+concurrency:
+  group: diag2
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      # state.json = what was seen last time, so a push only goes out when something changes.
+      - uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: state-${{ github.run_id }}
+          restore-keys: state-
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: echo skip watch
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          REPORT: ${{ inputs.report && '1' || '0' }}
+
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: state.json
+          key: state-${{ github.run_id }}
