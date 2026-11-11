@@ -1,8 +1,0 @@
-name: diag
-on: workflow_dispatch
-jobs:
-  diag:
-    runs-on: ubuntu-latest
-    timeout-minutes: 2
-    steps:
-      - run: echo hello
